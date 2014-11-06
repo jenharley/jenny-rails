@@ -1,6 +1,6 @@
 @jen = angular.module('jen', ['ngRoute'])
 
-@jen.config(['$routeProvider', ($routeProvider) ->
+@jen.config(['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
   $routeProvider.
     when('/posters', {
       templateUrl: '../templates/posters/index.html',
