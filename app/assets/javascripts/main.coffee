@@ -14,4 +14,5 @@
       templateUrl: '../templates/home.html',
       controller: 'homeController'
     })
+  $locationProvider.html5Mode(true)
 ])
