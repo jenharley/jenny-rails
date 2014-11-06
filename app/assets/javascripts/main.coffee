@@ -6,7 +6,7 @@
       templateUrl: '../templates/posters/index.html',
       controller: 'posterIndexController'
     })
-    .when('/posters/:id', {
+    .when('/posters/:slug', {
       templateUrl: '../templates/posters/show.html',
       controller: 'posterShowController'
     })

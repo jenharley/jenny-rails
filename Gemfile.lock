@@ -90,6 +90,8 @@ GEM
       activesupport
       capybara
       i18n
+    friendly_id (5.0.4)
+      activerecord (>= 4.0.0)
     high_voltage (2.2.1)
     highline (1.6.21)
     hike (1.2.3)
@@ -251,6 +253,7 @@ DEPENDENCIES
   factory_girl_rails
   flutie
   formulaic
+  friendly_id
   high_voltage
   i18n-tasks
   jbuilder

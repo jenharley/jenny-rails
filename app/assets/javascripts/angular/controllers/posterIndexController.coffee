@@ -3,6 +3,6 @@
   $http.get('./posters.json').success((data) ->
     $scope.posters = data
   )
-  $scope.viewPoster = (id) ->
-    $location.url "/posters/#{id}"
+  $scope.viewPoster = (slug) ->
+    $location.url "/posters/#{slug}"
 ]
