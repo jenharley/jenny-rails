@@ -1,17 +1,17 @@
-@jen = angular.module('jen', ['ngRoute'])
+@jen = angular.module('jen', ['ngRoute', 'templates'])
 
 @jen.config(['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
   $routeProvider.
     when('/posters', {
-      templateUrl: '../templates/posters/index.html',
+      templateUrl: 'posters/posters-index.html',
       controller: 'posterIndexController'
     })
     .when('/posters/:slug', {
-      templateUrl: '../templates/posters/show.html',
+      templateUrl: 'posters/posters-show.html',
       controller: 'posterShowController'
     })
     .otherwise({
-      templateUrl: '../templates/home.html',
+      templateUrl: 'home.html',
       controller: 'homeController'
     })
   $locationProvider.html5Mode(true)

@@ -1,0 +1,10 @@
+.poster
+  %h3.poster-thumb-title
+    {{ poster.name }}
+  %img(ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.name }}" imageonload="")
+
+.nav
+  %a(href="/posters/{{ nextPoster.slug }}")
+    {{ nextPoster.name }}
+  %a(href="/posters/{{ prevPoster.slug }}")
+    {{ prevPoster.name }}

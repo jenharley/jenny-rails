@@ -1,0 +1,21 @@
+%nav.nav.nav--centered
+  .nav__wrapper
+    %a.nav__logo--mobile{href: "/"}
+      = partial "partials/logo--mini"
+    %a.nav__menu-button{href: "javascript:void(0)", data: {js: 'menu-toggle'}} MENU
+    %ul.nav__list{data: {js: 'menu'}}
+      %li.nav__list-item
+        %a.nav__link{href: "/"} Home
+      %li.nav__list-item
+        %a.nav__link{href: "/posters"} Posters
+      %li.nav__list-item
+        %a.nav__link{href: "/work"} Work
+      %li.nav__list-item.nav__logo
+        %a.nav__link{href: "/"}
+          = partial "partials/logo"
+      %li.nav__list-item
+        %a.nav__link{href: "/about"} About
+      %li.nav__list-item
+        %a.nav__link{href: "/store"} Store
+      %li.nav__list-item
+        %a.nav__link{href: "/contact"} Contact

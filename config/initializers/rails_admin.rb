@@ -27,12 +27,6 @@ RailsAdmin.config do |config|
     delete
     show_in_app
 
-
-  config.model 'Poster' do
-    list do
-      include_fields :created_at
-    end
-  end
     ## With an audit adapter, you can add:
     # history_index
     # history_show

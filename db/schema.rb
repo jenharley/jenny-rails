@@ -11,10 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141106190909) do
+ActiveRecord::Schema.define(version: 20141107001039) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories_posters", force: true do |t|
+    t.integer  "category_id"
+    t.integer  "poster_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "categories_posters", ["category_id", "poster_id"], name: "index_categories_posters_on_category_id_and_poster_id", using: :btree
 
   create_table "delayed_jobs", force: true do |t|
     t.integer  "priority",   default: 0, null: false
@@ -38,6 +53,8 @@ ActiveRecord::Schema.define(version: 20141106190909) do
     t.datetime "updated_at"
     t.string   "slug"
     t.date     "poster_date"
+    t.string   "image_url"
+    t.integer  "category_id"
   end
 
   add_index "posters", ["name"], name: "index_posters_on_name", unique: true, using: :btree

@@ -1,0 +1,12 @@
+.card-list
+  %h2 Recent Posters
+  %ol.poster-thumbs
+    %li.poster-thumb{ "ng-repeat" => "poster in posters | orderBy: '-id'" }
+      %a(href="/posters/{{ poster.slug }}")
+        %img.poster-thumb-img(ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.title }}" ng-if="!$last")
+        %img.poster-thumb-img(ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.title }}" ng-if="$last" imageonload="")
+        .poster-thumb-overlay.animated
+          %h3.poster-thumb-title
+            {{ poster.name }}
+          %p.poster-thumb-linktext
+            View poster

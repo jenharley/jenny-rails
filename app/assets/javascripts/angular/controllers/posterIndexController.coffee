@@ -1,8 +1,6 @@
 @jen.controller 'posterIndexController', ['$scope', '$location', '$http', ($scope, $location, $http) ->
-  $scope.posters = []
-  $http.get('./posters.json').success((data) ->
+  $scope.image_url_prefix = "http://static.jenharley.com/posters/thumbs/"
+  $http.get('./api/posters.json').success((data) ->
     $scope.posters = data
   )
-  $scope.viewPoster = (slug) ->
-    $location.url "/posters/#{slug}"
 ]

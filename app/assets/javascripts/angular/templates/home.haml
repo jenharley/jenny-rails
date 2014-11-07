@@ -1,0 +1,15 @@
+%figure.hero.hero--home
+  = render "partials/hero-home"
+
+.card-list
+  %h2 Recent Posters
+  %ol.poster-thumbs
+    %li.poster-thumb{ "ng-repeat" => "post in posts | orderBy: '-id' | limitTo: 9" }
+      %a(href="/posts/{{ post.url }}")
+        %img.poster-thumb-img(ng-src="#{ poster_dir_thumb }{{ post.image }}" alt="{{ post.title }}" ng-if="!$last")
+        %img.poster-thumb-img(ng-src="#{ poster_dir_thumb }{{ post.image }}" alt="{{ post.title }}" ng-if="$last" imageonload="")
+        .poster-thumb-overlay.animated
+          %h3.poster-thumb-title
+            {{ post.title }}
+          %p.poster-thumb-linktext
+            View poster

@@ -3,6 +3,7 @@ source "https://rubygems.org"
 ruby "2.1.3"
 
 gem "airbrake"
+gem "angular-rails-templates"
 gem "bourbon", "~> 3.2.1"
 gem "coffee-rails"
 gem "delayed_job_active_record"
