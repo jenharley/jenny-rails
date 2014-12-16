@@ -1,0 +1,58 @@
+.hero
+  margin: 0
+  width: 100%
+
+.hero--home
+  // padding-top: 45%
+
+.stars
+  polygon
+    fill: #2C6A61
+
+  g:nth-child(7n) polygon
+    +animation(glow 9s ease infinite)
+    +animation-delay(2s)
+
+  g:nth-child(4n) polygon
+    +animation(glow 5s ease infinite)
+    +animation-delay(8.25s)
+
+  g:nth-child(9n) polygon
+    +animation(glow 7s ease infinite)
+    +animation-delay(2.3s)
+
+.eyes
+  +transform(translate3d(0, 0, 0))
+  +animation(eyes 10s 4s ease infinite)
+
++keyframes(glow)
+  0%
+    fill: #2C6A61
+  20%
+    fill: #edf7f5
+  40%
+    fill: #2C6A61
+  100%
+    fill: #2C6A61
+
++keyframes(eyes)
+  0%
+    +transform(translate3d(0, 0, 0))
+  10%
+    +transform(translate3d(7px, -3px, 0))
+  40%
+    +transform(translate3d(7px, -3px, 0))
+  55%
+    +transform(translate3d(0, 0, 0))
+
+.card-list
+  background: $white
+  padding: em(48, 24) 0
+
+  h2
+    color: $white
+    font-size: em(24)
+    font-weight: 100
+    letter-spacing: 2px
+    text-align: center
+    text-transform: uppercase

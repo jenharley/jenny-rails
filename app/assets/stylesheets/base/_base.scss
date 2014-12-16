@@ -1,24 +1,25 @@
-/* Bitters 0.10.0
- * http://bitters.bourbon.io
- * Copyright 2013–2014 thoughtbot, inc.
- * MIT License */
+// Bitters v0.10.0
+// http://bitters.bourbon.io
+
+@import 'normalize';
 
 // Variables
-@import "variables";
+@import 'variables';
+@import 'grid-settings';
 
-// Neat Settings -- uncomment if using Neat -- must be imported before Neat
-// @import "grid-settings";
+// Mixins
+@import 'mixins/flash';
 
 // Extends
-@import "extends/button";
-@import "extends/clearfix";
-@import "extends/errors";
-@import "extends/flashes";
-@import "extends/hide-text";
+@import 'extends/button';
+@import 'extends/clearfix';
+@import 'extends/hide-text';
 
 // Typography and Elements
-@import "typography";
-@import "forms";
-@import "tables";
-@import "lists";
-@import "buttons";
+@import 'typography';
+@import 'forms';
+@import 'tables';
+@import 'lists';
+@import 'flashes';
+@import 'buttons';
+@import 'animate';
