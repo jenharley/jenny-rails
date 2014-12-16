@@ -12,8 +12,14 @@ head
 body(class=body_class)
   = render "partials/header"
   = render "flashes"
-  div ng-view=""
-    = yield
+
+  main.main role="main" class="view-container"
+    #spinner
+      .switchbox
+        .switch#switch2
+        .switch
+    div ng-view="" class="view-animate"
+      = yield
   script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"
   script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.js"
   script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-resource.js"

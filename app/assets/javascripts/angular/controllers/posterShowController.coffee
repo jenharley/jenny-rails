@@ -1,4 +1,5 @@
 @jen.controller 'posterShowController', ['$scope', '$http', '$routeParams', '$filter', ($scope, $http, $routeParams, $filter) ->
+  $("#spinner").show();
   $http.get("./posters/#{$routeParams.slug}.json").success((data) ->
     $scope.poster = data
     $scope.image_url_prefix = "http://static.jenharley.com/posters/large/"

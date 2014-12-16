@@ -5,6 +5,7 @@
 //= require_tree ./templates
 
 //= require main
+//= require_tree ./angular/directives
 //= require angular/controllers/homeController
 //= require angular/controllers/posterIndexController
 //= require angular/controllers/posterShowController
