@@ -5,6 +5,9 @@ class ApplicationController < ActionController::Base
 
   layout :layout_by_resource
 
+  def index
+  end
+
   protected
 
   def layout_by_resource

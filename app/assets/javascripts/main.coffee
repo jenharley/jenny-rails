@@ -10,9 +10,20 @@
       templateUrl: 'posters/posters-show.html',
       controller: 'posterShowController'
     })
-    .otherwise({
+    .when('/work', {
+      templateUrl: 'posters/posters-index.html',
+      controller: 'posterIndexController'
+    })
+    .when('/', {
       templateUrl: 'home.html',
-      controller: 'homeController'
+      controller: 'homeController',
+    })
+    .otherwise({
+      controller: "fourOhFourController",
+      templateUrl: 'four.html',
+      resolve:
+        four: ->
+          true
     })
   $locationProvider.html5Mode(true)
 ])
