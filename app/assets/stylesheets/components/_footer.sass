@@ -1,4 +1,4 @@
-.footer
+footer
   $footer-background: desaturate(darken($base-accent-color, 20), 30)
   $footer-color: white
   $footer-link-color: transparentize($footer-color, 0.6)
@@ -6,7 +6,15 @@
 
   +clearfix
   background: $footer-background
+  height: em(80)
+  position: relative
   width: 100%
+  z-index: -2
+
+  .footer
+    bottom: 0
+    position: fixed
+    z-index: -1
 
   .footer__logo
     margin-right: 1em
