@@ -29,6 +29,20 @@ module JennyRails
     end
 
     config.action_controller.action_on_unpermitted_parameters = :raise
+
+    config.action_mailer.smtp_settings = {
+      :address => 'smtp.sendgrid.net',
+      :port                 => 587,
+      :domain               => "smharley.com",
+      :user_name            => "smharley",
+      :password             => ENV["JENNY_MAIL"],
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "jenharley.com"
+    }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

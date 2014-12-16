@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
   def layout_by_resource
     if devise_controller?
       "devise"
+    elsif params[:controller] == "contact"
+      "devise"
     else
       "application"
     end
