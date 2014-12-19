@@ -16,48 +16,7 @@
   100%
     opacity: 0
 
-.switchbox
-  position: absolute
-  +calc(left, "50% - 40px")
-  +calc(top, "50% - 40px")
-  width: 80px
-  height: 80px
-
-.switch
-  +animation(cross 1.2s infinite ease-in-out)
-  background-color: #f11b23
-  border-radius: 20px
-  height: 20px
-  margin-top: -10px
+#spinner iframe
+  margin-left: -50px
   position: absolute
   top: 50%
-  width: 20px
-  z-index: 3
-
-#switch2
-  +animation(z 1.2s infinite ease-in-out, cross 1.2s -0.6s infinite ease-in-out)
-  background-color: #5ebba8
-
-+keyframes(cross)
-  50%
-    margin-left: 40px
-
-+keyframes(z)
-  40%
-    z-index: 4
-  100%
-    z-index: 2
-// .view-container
-//   height: 100vh
-//   position: relative
-
-// .view-animate
-//   z-index: 88
-//   &.ng-enter, &.ng-leave
-//     +position(absolute, 0 0 0 0)
-//     +transition(all cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s)
-//     width: 100%
-//   &.ng-enter
-//     left: 100%
-//     &.ng-enter-active
-//       left: 0
