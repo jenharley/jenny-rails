@@ -2,6 +2,13 @@
   $("#spinner").show();
   $http.get("./posters/#{$routeParams.slug}.json").success((data) ->
     $scope.poster = data
+    m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+    d = new Date($scope.poster.poster_date)
+    curr_date = d.getDate()
+    curr_month = d.getMonth()
+    curr_year = d.getFullYear()
+
+    $scope.poster_date_formatted = m_names[curr_month] + " " + curr_date + ", " + curr_year
     $scope.image_url_prefix = "http://static.jenharley.com/posters/large/"
     $scope.poster.id
     next = $scope.poster.id + 1

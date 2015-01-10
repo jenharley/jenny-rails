@@ -1,10 +1,24 @@
 .poster
-  %h3.poster-thumb-title
-    {{ poster.name }}
-  %img(ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.name }}" imageonload="")
+  .poster-information
+    %h3.poster-title
+      {{ poster.name }}
+    %p.poster-date
+      {{ poster_date_formatted }}
+    .share
+      .share-button
+        %a.share-facebook{:href => "http://www.facebook.com/share.php?u=", :target => "_blank"}
+      .share-button
+        %a.share-twitter{:href => "http://twitter.com/home?status=", :target => "_blank"}
+      .share-button
+        %a.share-reddit{:href => "http://www.reddit.com/submit?url=", :target => "_blank"}
+      .share-button
+        %a.share-pinterest{:href => "http://pinterest.com/pin/create/button/?url=", :target => "_blank"}
+  .poster-image
+    %img(ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.name }}" imageonload="")
 
+    #disqus_thread
 .nav
-  %a(href="/posters/{{ nextPoster.slug }}")
-    {{ nextPoster.name }}
-  %a(href="/posters/{{ prevPoster.slug }}")
-    {{ prevPoster.name }}
+  %a(href="/posters/{{ prevPoster.slug }}" ng-show="prevPoster.slug" )
+    Previous
+  %a(href="/posters/{{ nextPoster.slug }}" ng-show="nextPoster.slug")
+    Next
