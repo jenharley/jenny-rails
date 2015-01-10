@@ -10,7 +10,3 @@ development: &default
 test:
   <<: *default
   database: jenny-rails_test
-
-production:
-  <<: *default
-  database: jenny-rails_production
