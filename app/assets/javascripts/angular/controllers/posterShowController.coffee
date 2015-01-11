@@ -9,7 +9,7 @@
     curr_year = d.getFullYear()
 
     $scope.poster_date_formatted = m_names[curr_month] + " " + curr_date + ", " + curr_year
-    $scope.image_url_prefix = "http://static.jenharley.com/posters/large/"
+    $scope.image_url_prefix = "//static.jenharley.com/posters/large/"
     $scope.poster.id
     next = $scope.poster.id + 1
     prev = $scope.poster.id - 1
