@@ -14,6 +14,15 @@
     next = $scope.poster.id + 1
     prev = $scope.poster.id - 1
 
+    disqus_shortname = "jh-portfolio"
+    (->
+      dsq = document.createElement("script")
+      dsq.type = "text/javascript"
+      dsq.async = true
+      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js"
+      (document.getElementsByTagName("head")[0] or document.getElementsByTagName("body")[0]).appendChild dsq
+    )()
+
     $http.get("./api/posters/#{next}.json").success((data) ->
       return $scope.nextPoster = data
     )
