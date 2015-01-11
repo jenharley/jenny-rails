@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   end
 
   resources :posters
+  resources :about
+  resources :store
 
   get "contact" => "contact#new", :as => "contact"
   post "contact" => "contact#create"

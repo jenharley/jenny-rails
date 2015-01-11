@@ -10,7 +10,11 @@
       templateUrl: 'posters/posters-show.html',
       controller: 'posterShowController'
     })
-    .when('/work', {
+    .when('/store', {
+      templateUrl: 'posters/posters-index.html',
+      controller: 'posterIndexController'
+    })
+    .when('/about', {
       templateUrl: 'posters/posters-index.html',
       controller: 'posterIndexController'
     })
