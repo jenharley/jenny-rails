@@ -1,5 +1,5 @@
 doctype html
-html ng-app="jen"
+html
 head
   meta charset="utf-8"
   meta name="ROBOTS" content="NOODP"
@@ -9,7 +9,7 @@ head
     = title
   = stylesheet_link_tag :application, media: "all"
   = csrf_meta_tags
-body(class=body_class)
+body(class=body_class ng-app="jen")
   = render "partials/header"
   = render "flashes"
 
@@ -17,12 +17,7 @@ body(class=body_class)
     #spinner
       iframe frameborder="0" height="40" scrolling="no" src="http://gfycat.com/ifr/InsecureLazyJaguar" style=("-webkit-backface-visibility: hidden;-webkit-transform: scale(1);") width="80"
 
-    div ng-view=""
-      = yield
+    = yield
 
   = render "partials/footer"
-  script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js"
-  script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular-animate.js"
-  script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular-resource.js"
-  script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular-route.js"
   = render "javascript"

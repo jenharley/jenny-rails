@@ -3,15 +3,16 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => "/admin", as: "rails_admin"
 
+  root "application#index"
+
   scope "api", defaults: {format: :json} do
     resources :posters
   end
 
-  resources :posters
-  resources :about
-  resources :store
-
   get "contact" => "contact#new", :as => "contact"
   post "contact" => "contact#create"
+
+  get "/pages/*id" => "high_voltage/pages#show"
+  get "*path" => "application#index"
 
 end

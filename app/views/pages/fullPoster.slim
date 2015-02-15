@@ -1,0 +1,28 @@
+.poster
+  .poster-information
+    h3.poster-title
+      | {{ poster.name }}
+    p.poster-date
+      | {{ poster_date_formatted }}
+    .share
+      .share-button
+        a href="#" socialshare="" socialshare-provider="facebook" socialshare-text="{{ poster.name }}" socialshare-url="{{ url }}" socialshare-media="http:{{ image_url_prefix }}{{ poster.image_url }}"
+          | Facebook
+      .share-button
+        a href="#" socialshare="" socialshare-via="@harleyo" socialshare-provider="twitter" socialshare-text="{{ poster.name }}" socialshare-url="{{ url }}" socialshare-media="http:{{ image_url_prefix }}{{ poster.image_url }}"
+          | Twitter
+      .share-button
+        a href="#" socialshare="" socialshare-provider="reddit" socialshare-text="{{ poster.name }}" socialshare-url="{{ url }}" socialshare-media="http:{{ image_url_prefix }}{{ poster.image_url }}"
+          | Reddit
+      .share-button
+        a href="#" socialshare="" socialshare-provider="pinterest" socialshare-text="{{ poster.name }}" socialshare-url="{{ url }}" socialshare-media="http:{{ image_url_prefix }}{{ poster.image_url }}"
+          | Pinterest
+  .poster-image
+    img ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.name }}" imageonload=""
+
+    #disqus_thread
+.nav
+  a href="/posters/{{ prevPoster.slug }}" ng-show="prevPoster.slug"
+    | Previous
+  a href="/posters/{{ nextPoster.slug }}" ng-show="nextPoster.slug"
+    | Next

@@ -1,10 +1,9 @@
 source "https://rubygems.org"
 
-ruby "2.1.3"
+ruby "2.2.0"
 
 gem "airbrake"
-gem "angular-rails-templates"
-gem "bourbon", "~> 3.2.1"
+gem "bourbon", "~> 4.1.0"
 gem "coffee-rails"
 gem "delayed_job_active_record"
 gem "devise"
@@ -15,20 +14,27 @@ gem "high_voltage"
 gem "i18n-tasks"
 gem "jbuilder"
 gem "jquery-rails"
-gem "neat", "~> 1.5.1"
+gem "neat"
 gem "newrelic_rpm", ">= 3.7.3"
 gem "normalize-rails", "~> 3.0.0"
 gem "pg"
 gem "rack-timeout"
-gem "rails", "4.1.6"
+gem "rails"
 gem "rails_admin"
 gem "recipient_interceptor"
-gem "sass-rails", "~> 4.0.3"
+gem "sass-rails"
 gem "simple_form"
 gem "slim-rails"
 gem "title"
 gem "uglifier"
 gem "unicorn"
+
+source "https://rails-assets.org" do
+  gem "rails-assets-angular"
+  gem "rails-assets-angular-route"
+  gem "rails-assets-angular-resource"
+  gem "rails-assets-angular-socialshare"
+end
 
 group :development do
   gem "spring"
@@ -41,7 +47,7 @@ group :development, :test do
   gem "dotenv-rails"
   gem "factory_girl_rails"
   gem "pry-rails"
-  gem "rspec-rails", "~> 3.0.0"
+  gem "rspec-rails"
 end
 
 group :test do

@@ -1,29 +1,21 @@
-@jen = angular.module('jen', ['ngRoute', 'templates'])
-
 @jen.config(['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
   $routeProvider.
     when('/posters', {
-      templateUrl: 'posters/posters-index.html',
-      controller: 'posterIndexController'
+      templateUrl: '/pages/posters',
     })
     .when('/posters/:slug', {
-      templateUrl: 'posters/posters-show.html',
-      controller: 'posterShowController'
+      templateUrl: '/pages/poster',
     })
     .when('/store', {
       templateUrl: 'posters/posters-index.html',
-      controller: 'posterIndexController'
     })
     .when('/about', {
       templateUrl: 'posters/posters-index.html',
-      controller: 'posterIndexController'
     })
     .when('/', {
-      templateUrl: 'home.html',
-      controller: 'homeController',
+      templateUrl: '/pages/home',
     })
     .otherwise({
-      controller: "fourOhFourController",
       templateUrl: 'four.html',
       resolve:
         four: ->
