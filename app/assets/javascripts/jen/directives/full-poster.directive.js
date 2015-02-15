@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('jen').directive('fullPoster', fullPoster);
+  angular.module('jen').directive('fullPoster', ['poster', fullPoster]);
 
   function fullPoster(poster) {
     return {

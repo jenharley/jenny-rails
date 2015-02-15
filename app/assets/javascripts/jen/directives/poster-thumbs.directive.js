@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('jen').directive('posterThumbs', posterThumbs);
+  angular.module('jen').directive('posterThumbs', ['thumbs', posterThumbs]);
 
   function posterThumbs(thumbs) {
     return {
