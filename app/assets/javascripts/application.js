@@ -1,7 +1,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular
-//= require angular-socialshare.min
+//= require angular-social-links
 //= require angular-route
 //= require angular-resource
 

@@ -1,1 +1,1 @@
-@jen = angular.module('jen', ['ngRoute', '720kb.socialshare'])
+@jen = angular.module('jen', ['ngRoute', 'socialLinks'])
