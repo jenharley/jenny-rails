@@ -7,16 +7,16 @@
       templateUrl: '/pages/poster',
     })
     .when('/store', {
-      templateUrl: 'posters/posters-index.html',
+      templateUrl: '/pages/poster',
     })
     .when('/about', {
-      templateUrl: 'posters/posters-index.html',
+      templateUrl: '/pages/poster',
     })
     .when('/', {
       templateUrl: '/pages/home',
     })
     .otherwise({
-      templateUrl: 'four.html',
+      templateUrl: '/pages/404',
       resolve:
         four: ->
           true
