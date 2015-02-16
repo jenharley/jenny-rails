@@ -6,7 +6,7 @@
   function posterThumbs(thumbs) {
     return {
       template:
-        '<li class="poster-thumb" ng-repeat="poster in posters | limitTo: 9 | orderBy: \'-id\'">' +
+        '<li class="poster-thumb" ng-repeat="poster in posters | limitTo: limit | orderBy: \'-id\'">' +
           '<a href="/posters/{{ poster.slug }}">' +
           '<img class="poster-thumb-img" ng-src="http://static.jenharley.com/posters/thumbs/{{ poster.image_url }}" alt="{{ poster.name }}" ng-if="!$last" />' +
           '<img class="poster-thumb-img" ng-src="http://static.jenharley.com/posters/thumbs/{{ poster.image_url }}" alt="{{ poster.name }}" ng-if="$last" imageonload="" />' +
@@ -16,13 +16,13 @@
               'View Poster</p></div>' +
         '</li>',
       link: link,
-      scope: {}
     };
 
-    function link(scope, element) {
+    function link(scope, element, attributes) {
       $('#spinner').show();
       thumbs.load().then(function(theThumbs) {
         scope.posters = theThumbs;
+        scope.limit = attributes["limit"];
       });
     };
   };

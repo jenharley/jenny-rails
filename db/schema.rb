@@ -11,18 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141215225802) do
+ActiveRecord::Schema.define(version: 20150216020457) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", force: true do |t|
-    t.string   "name"
+  create_table "categories", force: :cascade do |t|
+    t.string   "name",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "categories_posters", force: true do |t|
+  create_table "categories_posters", force: :cascade do |t|
     t.integer  "category_id"
     t.integer  "poster_id"
     t.datetime "created_at"
@@ -31,43 +31,45 @@ ActiveRecord::Schema.define(version: 20141215225802) do
 
   add_index "categories_posters", ["category_id", "poster_id"], name: "index_categories_posters_on_category_id_and_poster_id", using: :btree
 
-  create_table "delayed_jobs", force: true do |t|
-    t.integer  "priority",   default: 0, null: false
-    t.integer  "attempts",   default: 0, null: false
-    t.text     "handler",                null: false
+  create_table "delayed_jobs", force: :cascade do |t|
+    t.integer  "priority",               default: 0, null: false
+    t.integer  "attempts",               default: 0, null: false
+    t.text     "handler",                            null: false
     t.text     "last_error"
     t.datetime "run_at"
     t.datetime "locked_at"
     t.datetime "failed_at"
-    t.string   "locked_by"
-    t.string   "queue"
+    t.string   "locked_by",  limit: 255
+    t.string   "queue",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
-  create_table "posters", force: true do |t|
-    t.string   "name"
+  create_table "posters", force: :cascade do |t|
+    t.string   "name",        limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "slug"
+    t.string   "slug",        limit: 255
     t.date     "poster_date"
-    t.string   "image_url"
+    t.string   "image_url",   limit: 255
     t.integer  "category_id"
+    t.integer  "previous"
+    t.integer  "next"
   end
 
   add_index "posters", ["name"], name: "index_posters_on_name", unique: true, using: :btree
   add_index "posters", ["slug"], name: "index_posters_on_slug", using: :btree
 
-  create_table "users", force: true do |t|
-    t.string   "email",                  default: "",    null: false
-    t.string   "encrypted_password",     default: "",    null: false
-    t.boolean  "admin",                  default: false, null: false
-    t.string   "reset_password_token"
+  create_table "users", force: :cascade do |t|
+    t.string   "email",                  limit: 255, default: "",    null: false
+    t.string   "encrypted_password",     limit: 255, default: "",    null: false
+    t.boolean  "admin",                              default: false, null: false
+    t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,     null: false
+    t.integer  "sign_in_count",                      default: 0,     null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
