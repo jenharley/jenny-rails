@@ -8,6 +8,8 @@ head
   title
     = title
   = stylesheet_link_tag :application, media: "all"
+  link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"
+
   = csrf_meta_tags
 body(class=body_class ng-app="jen")
   = render "partials/header"

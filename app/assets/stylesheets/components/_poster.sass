@@ -8,6 +8,7 @@
 
   +media($large-screen)
     +span-columns(8)
+    float: left
     margin-left: 8.5298%
     margin-right: 0
     padding: 0
@@ -17,9 +18,34 @@
     +span-columns(3)
     padding: 10px 0 0
 
+.poster-date
+  color: tint(black, 57)
+  font-family: $serif
+  font-size: em(15)
+  padding: em(8, 15) 0 0
+
+.poster-nav
+  +row($direction: LTR)
+  margin-top: em(36)
+  padding: 0 em(10)
+
+  +media($large-screen)
+    padding: 0
+
+  li
+    +span-columns(6)
+    list-style: none
+
+    &:last-child
+      text-align: right
 
 .poster-social
   +row
+  padding: 0 em(10)
+
+  +media($large-screen)
+    padding: 0
+
   li
     +span-columns(3)
     list-style: none

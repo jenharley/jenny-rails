@@ -21,6 +21,10 @@
             scope.poster = post;
             var poster_date = moment(post.poster_date).format('MMMM Do YYYY');
             scope.poster_date_formatted = poster_date;
+
+            var thisPoster = post.id;
+            scope.nextPoster = thisPoster + 1;
+            scope.prevPoster = thisPoster - 1;
           }
         });
 

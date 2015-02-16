@@ -3,6 +3,10 @@
     | {{ poster.name }}
   p.poster-date
     | {{ poster_date_formatted }}
+.poster-image
+  img ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.name }}" spinner-hider=""
+
+.poster-information
   ul.poster-social
     li
       a social-twitter="" status="{{ poster.name }} - {{ url }} via @harleyo"
@@ -16,14 +20,11 @@
     li
       a social-reddit=""
         | share on reddit
+
   nav.poster-nav
-    li poster-nav-item=""
+    li
       a href="/posters/{{ poster.slug }}" ng-repeat="poster in posters | filter:{'id': prevPoster}"
         | Previous
-    li poster-nav-item=""
+    li
       a href="/posters/{{ poster.slug }}" ng-repeat="poster in posters | filter:{'id': nextPoster}"
         | Next
-
-.poster-image
-  img ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.name }}" spinner-hider=""
-
