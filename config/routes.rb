@@ -9,10 +9,11 @@ Rails.application.routes.draw do
     resources :posters
   end
 
-  get "contact" => "contact#new", :as => "contact"
+  get "contact" => "contact#new", as: "contact"
   post "contact" => "contact#create"
 
   get "/pages/*id" => "high_voltage/pages#show"
+  get "contact/confirm" => "contact#confirm", as: "confirm"
   get "*path" => "application#index"
 
 end
