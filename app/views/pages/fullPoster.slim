@@ -3,15 +3,19 @@
     | {{ poster.name }}
   p.poster-date
     | {{ poster_date_formatted }}
-  .poster-social
-    a social-twitter="" status="{{ poster.name }} - {{ url }} via @harleyo"
-      | share on twitter
-    a social-facebook="" status="{{ poster.name }} - {{ url }}"
-      | share on facebook
-    a social-pinterest="" media="http:{{ image_url_prefix }}{{ poster.image_url }}"
-      | share on pinterest
-    a social-reddit=""
-      | share on reddit
+  ul.poster-social
+    li
+      a social-twitter="" status="{{ poster.name }} - {{ url }} via @harleyo"
+        | share on twitter
+    li
+      a social-facebook="" status="{{ poster.name }} - {{ url }}"
+        | share on facebook
+    li
+      a social-pinterest="" media="http:{{ image_url_prefix }}{{ poster.image_url }}"
+        | share on pinterest
+    li
+      a social-reddit=""
+        | share on reddit
   nav.poster-nav
     li poster-nav-item=""
       a href="/posters/{{ poster.slug }}" ng-repeat="poster in posters | filter:{'id': prevPoster}"
@@ -21,5 +25,5 @@
         | Next
 
 .poster-image
-  img ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.name }}" imageonload=""
+  img ng-src="{{ image_url_prefix }}{{ poster.image_url }}" alt="{{ poster.name }}" spinner-hider=""
 

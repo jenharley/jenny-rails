@@ -78,7 +78,7 @@
     display: block
     line-height: $centered-navigation-height
     overflow: hidden
-    padding-right: $centered-navigation-submenu-padding
+    padding: 0 ($centered-navigation-submenu-padding / 2)
     text-align: center
     width: 100%
     z-index: 99
@@ -90,8 +90,8 @@
       text-align: right
 
       a
-        padding-right: $centered-navigation-item-padding
-        padding-left: $centered-navigation-item-padding
+        min-width: em(100)
+        text-align: center
 
     a
       color: $centered-navigation-color
