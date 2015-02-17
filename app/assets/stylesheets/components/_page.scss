@@ -1,14 +1,20 @@
-#spinner {
+.spinner {
   @include position(fixed, 0px 0px 0px 0px);
   background: #fff;
   text-align: center;
   z-index: 97;
-}
 
-#spinner.hidden {
-  @include animation(fadeOut 1900ms forwards);
-  .switchbox {
-    @include animation(fadeOut 1600ms forwards);
+  &.hidden {
+    @include animation(fadeOut 1900ms forwards);
+    .switchbox {
+      @include animation(fadeOut 1600ms forwards);
+    }
+  }
+
+  iframe {
+    margin-left: -30px;
+    position: absolute;
+    top: 50%;
   }
 }
 
@@ -20,11 +26,4 @@
   100% {
     opacity: 0;
   }
-}
-
-
-#spinner iframe {
-  margin-left: -30px;
-  position: absolute;
-  top: 50%;
 }
