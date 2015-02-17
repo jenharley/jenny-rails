@@ -1,0 +1,109 @@
+// Here because I don't have a _main.sass yet and this is where it's necessary
+.main {
+  @include calc('min-height', '100vh - 60px');
+  position: relative;
+  z-index: 2;
+}
+
+footer {
+  $footer-background: desaturate(darken($base-accent-color, 20), 30);
+  $footer-color: #fff;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+  @include clearfix;
+  background: $footer-background;
+  height: em(80);
+  position: relative;
+  width: 100%;
+  z-index: 0;
+
+  .footer {
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .footer__logo {
+    margin-bottom: 1em;
+    margin-right: 1em;
+
+    @include media($large-screen) {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    img {
+      height: 1.6em;
+    }
+  }
+
+  ul {
+    margin-bottom: 1em;
+
+    @include media($large-screen) {
+      float: left;
+      margin-bottom: 0;
+      margin-left: 1em;
+    }
+  }
+
+  li {
+    font-weight: 800;
+    line-height: em(64);
+    padding-right: 1em;
+
+    @include media($large-screen) {
+      display: inline;
+      text-align: left;
+    }
+
+    a {
+      color: $footer-link-color;
+
+      &:hover {
+        color: transparentize($footer-color, 0);
+      }
+    }
+  }
+
+  .footer-social {
+    @include media($large-screen) {
+      float: right;
+    }
+
+    li {
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+  }
+}
+
+.nav__list--secondary {
+  margin: 1em 1em 0 0;
+
+  @include media($large-screen) {
+    float: right;
+    margin-top: 0;
+  }
+
+  li {
+    float: left;
+    font-size: 1em;
+    padding-right: 0.7em;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  img {
+    height: 1.6em;
+    margin-top: em(19);
+    opacity: 0.7;
+    padding: 1px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

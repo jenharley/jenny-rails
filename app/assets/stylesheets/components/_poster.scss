@@ -1,0 +1,88 @@
+.poster {
+  @include outer-container;
+  @include row($direction: RTL);
+  padding: 100px 0;
+}
+
+.poster-image {
+  padding: 10px;
+
+  @include media($large-screen) {
+    @include span-columns(8);
+    float: left;
+    margin-left: 8.5298%;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+.poster-information {
+  @include media($large-screen) {
+    @include span-columns(3);
+    padding: 10px 0 0;
+  }
+}
+
+.poster-date {
+  color: tint(#000, 57);
+  font-family: $serif;
+  font-size: em(15);
+  padding: em(8, 15) 0 0;
+}
+
+.poster-nav {
+  @include row($direction: LTR);
+  margin-top: em(36);
+  padding: 0 em(10);
+
+  @include media($large-screen) {
+    padding: 0;
+  }
+
+  li {
+    @include span-columns(6);
+    list-style: none;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.poster-social {
+  @include row;
+  padding: 0 em(10);
+
+  @include media($large-screen) {
+    padding: 0;
+  }
+
+  li {
+    @include span-columns(3);
+    list-style: none;
+
+    a {
+      @include hide-text;
+      background-size: em(32);
+      display: block;
+      height: em(36);
+      width: 100%;
+    }
+  }
+
+  [social-twitter] {
+    background: #54abed image_url('twitter-icon.svg') no-repeat center;
+  }
+
+  [social-facebook] {
+    background: #304ea8 image_url('facebook-square-icon.svg') no-repeat center;
+  }
+
+  [social-pinterest] {
+    background: #bf1b1b image_url('pinterest-icon.svg') no-repeat center;
+  }
+
+  [social-reddit] {
+    background: #93c1f0 image_url('reddit-icon.svg') no-repeat center;
+  }
+}

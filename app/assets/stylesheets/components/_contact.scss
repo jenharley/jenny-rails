@@ -1,0 +1,12 @@
+.contact {
+  &-form {
+    @include span-columns(4);
+    @include shift(4);
+    padding-bottom: em(100);
+  }
+
+  &-header {
+    padding: em(48) 0 em(32);
+    text-align: center;
+  }
+}
