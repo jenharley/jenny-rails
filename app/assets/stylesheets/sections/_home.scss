@@ -3,8 +3,11 @@
   width: 100%;
 }
 
-.hero--home {
-  // padding-top: 45%
+.home {
+  &-eyes {
+    animation: eyes 10s 4s ease infinite;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .home-constellation-fill {
@@ -38,11 +41,6 @@
   }
 }
 
-.eyes {
-  animation: eyes 10s 4s ease infinite;
-  transform: translate3d(0, 0, 0);
-}
-
 @keyframes glow {
   0% {
     opacity: 0;
@@ -73,25 +71,5 @@
 
   55% {
     transform: translate3d(0, 0, 0);
-  }
-}
-
-
-.card-list {
-  background: $white;
-  padding: 0 0 em(100, 24);
-
-  &.gallery {
-    padding-top: 8em;
-  }
-
-  h2 {
-    color: #3e4552;
-    font-size: em(17);
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin: (-1em) 0 em(24, 17);
-    text-align: center;
-    text-transform: uppercase;
   }
 }
