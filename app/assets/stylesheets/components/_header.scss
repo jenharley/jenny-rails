@@ -4,7 +4,7 @@
   $centered-navigation-background: $dark-gray-bg;
   $centered-navigation-color: transparentize($white, 0.1);
   $centered-navigation-color-hover: $white;
-  $centered-navigation-height: 60px;
+  $centered-navigation-height: rem(60);
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;

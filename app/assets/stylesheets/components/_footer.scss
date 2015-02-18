@@ -1,6 +1,6 @@
 // Here because I don't have a _main.sass yet and this is where it's necessary
 .main {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - em(60));
   position: relative;
   z-index: 2;
 }
@@ -100,7 +100,7 @@ footer {
     height: 1.6em;
     margin-top: em(19);
     opacity: 0.7;
-    padding: 1px;
+    padding: em(1);
 
     &:hover {
       opacity: 1;

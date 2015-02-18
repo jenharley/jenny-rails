@@ -1,7 +1,7 @@
 .poster {
   @include outer-container;
   @include row($direction: RTL);
-  padding: 100px 0;
+  padding: em(100) 0;
 
   &-date {
     color: tint(#000, 57);
@@ -11,7 +11,7 @@
   }
 
   &-image {
-    padding: 10px;
+    padding: em(10);
 
     @include media($large-screen) {
       @include span-columns(8);
@@ -25,7 +25,7 @@
   &-information {
     @include media($large-screen) {
       @include span-columns(3);
-      padding: 10px 0 0;
+      padding: em(10) 0 0;
     }
   }
 
