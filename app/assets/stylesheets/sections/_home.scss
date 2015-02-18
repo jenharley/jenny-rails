@@ -43,7 +43,7 @@
   transform: translate3d(0, 0, 0);
 }
 
-@include keyframes(glow) {
+@keyframes glow {
   0% {
     opacity: 0;
   }
@@ -58,7 +58,7 @@
 }
 
 
-@include keyframes(eyes) {
+@keyframes eyes {
   0% {
     transform: translate3d(0, 0, 0);
   }

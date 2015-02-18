@@ -5,9 +5,10 @@
   z-index: 97;
 
   &.hidden {
-    @include animation(fadeOut 1900ms forwards);
+    animation: fadeOut 1900ms forwards;
+
     .switchbox {
-      @include animation(fadeOut 1600ms forwards);
+      animation: fadeOut 1600ms forwards;
     }
   }
 
@@ -18,7 +19,7 @@
   }
 }
 
-@include keyframes(fadeOut) {
+@keyframes fadeOut {
   80% {
     opacity: 1;
   }

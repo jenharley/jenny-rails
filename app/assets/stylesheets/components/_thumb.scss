@@ -3,7 +3,6 @@
 }
 
 .poster-thumb-overlay {
-  @include transition(all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1));
   background-color: rgba(#000, 0.3);
   bottom: em(-40);
   left: 0;
@@ -11,6 +10,7 @@
   padding: em(8) 0 em(8) em(12);
   position: absolute;
   right: 0;
+  transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .poster-thumb {
@@ -38,13 +38,13 @@
     position: relative;
 
     &:hover img {
-      @include filter(grayscale(0%));
+      filter: grayscale(0%);
     }
   }
 
   img {
-    @include filter(grayscale(100%));
-    @include transition(all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1));
     display: block;
+    filter: grayscale(100%);
+    transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
 }
