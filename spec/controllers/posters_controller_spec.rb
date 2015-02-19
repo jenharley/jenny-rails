@@ -36,124 +36,124 @@ RSpec.describe PostersController, :type => :controller do
   # PostersController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
-  describe "GET index" do
-    it "assigns all posters as @posters" do
-      poster = Poster.create! valid_attributes
-      get :index, {}, valid_session
-      expect(assigns(:posters)).to eq([poster])
-    end
-  end
-
-  describe "GET show" do
-    it "assigns the requested poster as @poster" do
-      poster = Poster.create! valid_attributes
-      get :show, {:id => poster.to_param}, valid_session
-      expect(assigns(:poster)).to eq(poster)
-    end
-  end
-
-  describe "GET new" do
-    it "assigns a new poster as @poster" do
-      get :new, {}, valid_session
-      expect(assigns(:poster)).to be_a_new(Poster)
-    end
-  end
-
-  describe "GET edit" do
-    it "assigns the requested poster as @poster" do
-      poster = Poster.create! valid_attributes
-      get :edit, {:id => poster.to_param}, valid_session
-      expect(assigns(:poster)).to eq(poster)
-    end
-  end
-
-  describe "POST create" do
-    describe "with valid params" do
-      it "creates a new Poster" do
-        expect {
-          post :create, {:poster => valid_attributes}, valid_session
-        }.to change(Poster, :count).by(1)
-      end
-
-      it "assigns a newly created poster as @poster" do
-        post :create, {:poster => valid_attributes}, valid_session
-        expect(assigns(:poster)).to be_a(Poster)
-        expect(assigns(:poster)).to be_persisted
-      end
-
-      it "redirects to the created poster" do
-        post :create, {:poster => valid_attributes}, valid_session
-        expect(response).to redirect_to(Poster.last)
-      end
-    end
-
-    describe "with invalid params" do
-      it "assigns a newly created but unsaved poster as @poster" do
-        post :create, {:poster => invalid_attributes}, valid_session
-        expect(assigns(:poster)).to be_a_new(Poster)
-      end
-
-      it "re-renders the 'new' template" do
-        post :create, {:poster => invalid_attributes}, valid_session
-        expect(response).to render_template("new")
-      end
-    end
-  end
-
-  describe "PUT update" do
-    describe "with valid params" do
-      let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
-      }
-
-      it "updates the requested poster" do
-        poster = Poster.create! valid_attributes
-        put :update, {:id => poster.to_param, :poster => new_attributes}, valid_session
-        poster.reload
-        skip("Add assertions for updated state")
-      end
-
-      it "assigns the requested poster as @poster" do
-        poster = Poster.create! valid_attributes
-        put :update, {:id => poster.to_param, :poster => valid_attributes}, valid_session
-        expect(assigns(:poster)).to eq(poster)
-      end
-
-      it "redirects to the poster" do
-        poster = Poster.create! valid_attributes
-        put :update, {:id => poster.to_param, :poster => valid_attributes}, valid_session
-        expect(response).to redirect_to(poster)
-      end
-    end
-
-    describe "with invalid params" do
-      it "assigns the poster as @poster" do
-        poster = Poster.create! valid_attributes
-        put :update, {:id => poster.to_param, :poster => invalid_attributes}, valid_session
-        expect(assigns(:poster)).to eq(poster)
-      end
-
-      it "re-renders the 'edit' template" do
-        poster = Poster.create! valid_attributes
-        put :update, {:id => poster.to_param, :poster => invalid_attributes}, valid_session
-        expect(response).to render_template("edit")
-      end
-    end
-  end
-
-  describe "DELETE destroy" do
-    it "destroys the requested poster" do
-      poster = Poster.create! valid_attributes
-      expect {
-        delete :destroy, {:id => poster.to_param}, valid_session
-      }.to change(Poster, :count).by(-1)
-    end
-
-    it "redirects to the posters list" do
-      poster = Poster.create! valid_attributes
-      delete :destroy, {:id => poster.to_param}, valid_session
-      expect(response).to redirect_to(posters_url)
-    end
-  end
-
+  # describe "GET index" do
+  #   it "assigns all posters as @posters" do
+  #     poster = Poster.create! valid_attributes
+  #     get :index, {}, valid_session
+  #     expect(assigns(:posters)).to eq([poster])
+  #   end
+  # end
+  #
+  # describe "GET show" do
+  #   it "assigns the requested poster as @poster" do
+  #     poster = Poster.create! valid_attributes
+  #     get :show, {:id => poster.to_param}, valid_session
+  #     expect(assigns(:poster)).to eq(poster)
+  #   end
+  # end
+  #
+  # describe "GET new" do
+  #   it "assigns a new poster as @poster" do
+  #     get :new, {}, valid_session
+  #     expect(assigns(:poster)).to be_a_new(Poster)
+  #   end
+  # end
+  #
+  # describe "GET edit" do
+  #   it "assigns the requested poster as @poster" do
+  #     poster = Poster.create! valid_attributes
+  #     get :edit, {:id => poster.to_param}, valid_session
+  #     expect(assigns(:poster)).to eq(poster)
+  #   end
+  # end
+  #
+  # describe "POST create" do
+  #   describe "with valid params" do
+  #     it "creates a new Poster" do
+  #       expect {
+  #         post :create, {:poster => valid_attributes}, valid_session
+  #       }.to change(Poster, :count).by(1)
+  #     end
+  #
+  #     it "assigns a newly created poster as @poster" do
+  #       post :create, {:poster => valid_attributes}, valid_session
+  #       expect(assigns(:poster)).to be_a(Poster)
+  #       expect(assigns(:poster)).to be_persisted
+  #     end
+  #
+  #     it "redirects to the created poster" do
+  #       post :create, {:poster => valid_attributes}, valid_session
+  #       expect(response).to redirect_to(Poster.last)
+  #     end
+  #   end
+  #
+  #   describe "with invalid params" do
+  #     it "assigns a newly created but unsaved poster as @poster" do
+  #       post :create, {:poster => invalid_attributes}, valid_session
+  #       expect(assigns(:poster)).to be_a_new(Poster)
+  #     end
+  #
+  #     it "re-renders the 'new' template" do
+  #       post :create, {:poster => invalid_attributes}, valid_session
+  #       expect(response).to render_template("new")
+  #     end
+  #   end
+  # end
+  #
+  # describe "PUT update" do
+  #   describe "with valid params" do
+  #     let(:new_attributes) {
+  #       skip("Add a hash of attributes valid for your model")
+  #     }
+  #
+  #     it "updates the requested poster" do
+  #       poster = Poster.create! valid_attributes
+  #       put :update, {:id => poster.to_param, :poster => new_attributes}, valid_session
+  #       poster.reload
+  #       skip("Add assertions for updated state")
+  #     end
+  #
+  #     it "assigns the requested poster as @poster" do
+  #       poster = Poster.create! valid_attributes
+  #       put :update, {:id => poster.to_param, :poster => valid_attributes}, valid_session
+  #       expect(assigns(:poster)).to eq(poster)
+  #     end
+  #
+  #     it "redirects to the poster" do
+  #       poster = Poster.create! valid_attributes
+  #       put :update, {:id => poster.to_param, :poster => valid_attributes}, valid_session
+  #       expect(response).to redirect_to(poster)
+  #     end
+  #   end
+  #
+  #   describe "with invalid params" do
+  #     it "assigns the poster as @poster" do
+  #       poster = Poster.create! valid_attributes
+  #       put :update, {:id => poster.to_param, :poster => invalid_attributes}, valid_session
+  #       expect(assigns(:poster)).to eq(poster)
+  #     end
+  #
+  #     it "re-renders the 'edit' template" do
+  #       poster = Poster.create! valid_attributes
+  #       put :update, {:id => poster.to_param, :poster => invalid_attributes}, valid_session
+  #       expect(response).to render_template("edit")
+  #     end
+  #   end
+  # end
+  #
+  # describe "DELETE destroy" do
+  #   it "destroys the requested poster" do
+  #     poster = Poster.create! valid_attributes
+  #     expect {
+  #       delete :destroy, {:id => poster.to_param}, valid_session
+  #     }.to change(Poster, :count).by(-1)
+  #   end
+  #
+  #   it "redirects to the posters list" do
+  #     poster = Poster.create! valid_attributes
+  #     delete :destroy, {:id => poster.to_param}, valid_session
+  #     expect(response).to redirect_to(posters_url)
+  #   end
+  # end
+  #
 end
