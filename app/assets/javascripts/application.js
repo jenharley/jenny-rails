@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery_ujs
+//= require xml2json
 //= require angular
 //= require angular-social-links
 //= require angular-route
