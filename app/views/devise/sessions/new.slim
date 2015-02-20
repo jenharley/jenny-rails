@@ -1,0 +1,24 @@
+.auth
+  h2.auth-heading Log in
+
+  = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .ng-hide
+      input style='display:none'
+      input type='password' style='display:none'
+
+    .form-inputs
+      .sky-label
+        = f.input :email,
+          required: false,
+          class: 'auth-input',
+          input_html: { autocomplete: 'off' }
+      .sky-label
+        = f.input :password,
+          required: false,
+          class: 'auth-input',
+          input_html: { autocomplete: 'off' }
+
+    .form-actions
+      = f.button :submit, 'Log in'
+
+  = render 'devise/shared/links'

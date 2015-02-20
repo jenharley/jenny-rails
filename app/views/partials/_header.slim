@@ -20,3 +20,6 @@ nav.nav.nav--centered
       li.nav__list-item
         a.nav__link href="/contact" target="_self"
           | Contact
+      - if user_signed_in?
+        = button_to "Sign out", destroy_user_session_path,
+          method: :delete
