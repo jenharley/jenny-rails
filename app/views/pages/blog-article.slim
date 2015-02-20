@@ -1,6 +1,6 @@
 li.blog-article ng-repeat="article in articles | limitTo: limit"
-  a href="{{ article.link }}"
+  a href="{{ article.link._href }}"
     h3
       | {{ article.title }}
     p.blog-article-date
-      | {{ article.published | date: "MMMM d yyyy" }}
+      | {{ formatDate(article.published) }}

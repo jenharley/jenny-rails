@@ -14,10 +14,10 @@
         scope.articles = theBlogs;
         scope.limit = attributes["limit"];
 
-        angular.forEach(theBlogs, function(article) {
-          scope.article_formatted_date = moment(article.published).format('MMMM Do YYYY');
-          debugger;
-        });
+        var format = 'MMMM Do YYYY';
+        scope.formatDate = function(date) {
+          return moment(date).add(1, 'days').format(format);
+        }
       });
     };
   };
