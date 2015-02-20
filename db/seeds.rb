@@ -1,5 +1,7 @@
 Category.create( name: "Posters")
 
+User.create!( email: "smharley@gmail.com", password: "password", admin: true )
+
 Poster.create!([
   {
     id: 41,
@@ -7,7 +9,7 @@ Poster.create!([
     created_at: "2015-02-18T23:07:23.808Z",
     created_at: "2015-02-18T23:07:23.808Z",
     slug: "the-go-rounds",
-    poster_date: "2015-02-13",
+    poster_date: "2015-03-21",
     image_url: "2015.3.21.The-Go-Rounds.png",
     previous: 40,
     next: 42,
