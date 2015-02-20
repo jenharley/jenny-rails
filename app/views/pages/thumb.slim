@@ -1,4 +1,4 @@
-li.poster-thumb ng-repeat="poster in posters | limitTo: limit | orderBy: -id"
+li.poster-thumb ng-repeat="poster in posters | limitTo: limit | orderBy: '-id'"
   a href="/posters/{{ poster.slug }}"
     img.poster-thumb-img ng-src="http://static.jenharley.com/posters/thumbs/{{ poster.image_url }}" alt="{{ poster.name }}" ng-if="!$last"
     img.poster-thumb-img ng-src="http://static.jenharley.com/posters/thumbs/{{ poster.image_url }}" alt="{{ poster.name }}" ng-if="$last" spinner-hider=""
