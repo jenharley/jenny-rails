@@ -7,78 +7,57 @@ Poster.create!([
     id: 41,
     name: "The Go Rounds",
     created_at: "2015-02-18T23:07:23.808Z",
-    created_at: "2015-02-18T23:07:23.808Z",
     slug: "the-go-rounds",
     poster_date: "2015-03-21",
     image_url: "2015.3.21.The-Go-Rounds.png",
-    previous: 40,
-    next: 42,
   },
   {
     id: 40,
     name: "Chris Bathgate IV",
     created_at: "2015-02-18T23:07:23.808Z",
-    created_at: "2015-02-18T23:07:23.808Z",
     slug: "chris-bathgate-4",
     poster_date: "2015-02-13",
     image_url: "2015.2.13.Chris-Bathgate.png",
-    previous: 39,
-    next: 41,
   },
   {
     id: 39,
     name: "Chris Bathgate III",
     created_at: "2015-02-18T23:07:23.808Z",
-    created_at: "2015-02-18T23:07:23.808Z",
     slug: "chris-bathgate-3",
     poster_date: "2015-02-12",
     image_url: "2015.2.12.Chris-Bathgate.png",
-    previous: 38,
-    next: 40,
   },
   {
     id: 38,
     name: "Mittenfest IX",
     created_at: "2015-02-18T23:07:23.808Z",
-    created_at: "2015-02-18T23:07:23.808Z",
     slug: "mittenfest-ix",
     poster_date: "2015-01-01",
     image_url: "2015.1.1.Mittenfest-IX.png",
-    previous: 37,
-    next: 39,
   },
   {
     id: 37,
     name: "Chris Bathgate II",
     created_at: "2015-02-18T23:07:23.808Z",
-    created_at: "2015-02-18T23:07:23.808Z",
     slug: "chris-bathgate-2",
     poster_date: "2014-12-27",
     image_url: "2014.12.27.Chris-Bathgate.png",
-    previous: 36,
-    next: 38,
   },
   {
     id: 36,
     name: "The Understorey",
     created_at: "2015-02-18T23:07:23.808Z",
-    created_at: "2015-02-18T23:07:23.808Z",
     slug: "the-understorey",
     poster_date: "2014-11-25",
     image_url: "2014.11.25.The-Understorey.png",
-    previous: 35,
-    next: 37,
   },
   {
     id: 35,
     name: "Misty Lyn",
     created_at: "2015-02-18T23:07:23.808Z",
-    created_at: "2015-02-18T23:07:23.808Z",
     slug: "misty-lyn",
     poster_date: "2014-11-15",
     image_url: "2014.11.15.Misty-Lyn.png",
-    previous: 34,
-    next: 36,
   },
   {
     id: 34,
@@ -88,8 +67,6 @@ Poster.create!([
     slug: "surf-and-turf-2",
     poster_date: "2014-11-09",
     image_url: "2014.11.9.Surf-and-Turf-2.png",
-    previous: 33,
-    next: 35,
   },
   {
     id: 33,
@@ -99,8 +76,6 @@ Poster.create!([
     slug: "the-ragbirds",
     poster_date: "2014-10-18",
     image_url: "2014.10.18.The-Ragbirds.png",
-    previous: 32,
-    next: 34,
   },
   {
     id: 32,
@@ -110,8 +85,6 @@ Poster.create!([
     slug: "nick-collins-trio",
     poster_date: "2014-10-14",
     image_url: "2014.10.14.Nick-Collins-Trio.png",
-    previous: 31,
-    next: 33,
   },
   {
     id: 31,
@@ -121,8 +94,6 @@ Poster.create!([
     slug: "soup-and-song",
     poster_date: "2014-10-11",
     image_url: "2014.10.11.Soup-and-Song.png",
-    previous: 30,
-    next: 32,
   },
   {
     id: 30,
@@ -132,8 +103,6 @@ Poster.create!([
     slug: "legendary-wings",
     poster_date: "2014-09-09",
     image_url: "2014.9.9.Legendary-Wings.png",
-    previous: 29,
-    next: 31,
   },
   {
     id: 29,
@@ -143,8 +112,6 @@ Poster.create!([
     slug: "ann-arbor-barfight",
     poster_date: "2014-08-18",
     image_url: "2014.8.18.Ann-Arbor-Barfight.png",
-    previous: 28,
-    next: 30,
   },
   {
     id: 28,
@@ -154,8 +121,6 @@ Poster.create!([
     slug: "ypsilanti-heritage-festival",
     poster_date: "2014-08-15",
     image_url: "2014.8.15.Ypsilanti-Heritage-Festival.png",
-    previous: 27,
-    next: 29,
   },
   {
     id: 27,
@@ -165,8 +130,6 @@ Poster.create!([
     slug: "nick-collins-quartet-3",
     poster_date: "2014-08-12",
     image_url: "2014.8.12.Nick-Collins-Quartet.png",
-    previous: 26,
-    next: 28,
   },
   {
     id: 26,
@@ -176,8 +139,6 @@ Poster.create!([
     slug: "erin-morris-and-the-ragdolls",
     poster_date: "2014-05-24",
     image_url: "2014.5.24.Erin-Morris-and-the-Ragdolls.png",
-    previous: 25,
-    next: 27,
   },
   {
     id: 25,
@@ -187,8 +148,6 @@ Poster.create!([
     slug: "dinner-at-braun-court",
     poster_date: "2014-05-07",
     image_url: "2014.5.7.Dinner-at-Braun-Court.png",
-    previous: 24,
-    next: 26,
   },
   {
     id: 24,
@@ -198,8 +157,6 @@ Poster.create!([
     slug: "nick-collins-quartet-2",
     poster_date: "2014-04-24",
     image_url: "2014.4.24.Nick-Collins-Quartet.png",
-    previous: 23,
-    next: 25,
   },
   {
     id: 23,
@@ -209,8 +166,6 @@ Poster.create!([
     slug: "matt-jones-2",
     poster_date: "2014-04-18",
     image_url: "2014.4.18.Matt-Jones.png",
-    previous: 22,
-    next: 24,
   },
   {
     id: 22,
@@ -220,8 +175,6 @@ Poster.create!([
     slug: "timothy-monger",
     poster_date: "2014-03-14",
     image_url: "2014.3.14.Timothy-Monger.png",
-    previous: 21,
-    next: 23,
   },
   {
     id: 21,
@@ -231,8 +184,6 @@ Poster.create!([
     slug: "great-lakes-myth-society",
     poster_date: "2014-02-21",
     image_url: "2014.2.21.Great-Lakes-Myth-Society.png",
-    previous: 20,
-    next: 22,
   },
   {
     id: 20,
@@ -242,8 +193,6 @@ Poster.create!([
     slug: "chris-kasper-winter-tour",
     poster_date: "2014-02-20",
     image_url: "2014.2.20.Chris-Kasper-Winter-Tour.png",
-    previous: 19,
-    next: 21,
   },
   {
     id: 19,
@@ -253,8 +202,6 @@ Poster.create!([
     slug: "the-skinny-dippers",
     poster_date: "2014-02-09",
     image_url: "2014.2.9.The-Skinny-Dippers.png",
-    previous: 18,
-    next: 20,
   },
   {
     id: 18,
@@ -264,8 +211,6 @@ Poster.create!([
     slug: "nick-collins-quartet",
     poster_date: "2014-01-09",
     image_url: "2014.1.9.Nick-Collins-Quartet.png",
-    previous: 17,
-    next: 19,
   },
   {
     id: 17,
@@ -275,8 +220,6 @@ Poster.create!([
     slug: "mittenfest-viii",
     poster_date: "2013-12-27",
     image_url: "2013.12.27-Mittenfest-VIII.png",
-    previous: 16,
-    next: 18,
   },
   {
     id: 16,
@@ -286,8 +229,6 @@ Poster.create!([
     slug: "black-jake-and-the-carnies-3",
     poster_date: "2013-12-06",
     image_url: "2013.12.6.Black-Jake-and-the-Carnies.png",
-    previous: 15,
-    next: 17,
   },
   {
     id: 15,
@@ -297,8 +238,6 @@ Poster.create!([
     slug: "the-last-waltz",
     poster_date: "2014-11-30",
     image_url: "2013.11.30.The-Last-Waltz.png",
-    previous: 14,
-    next: 16,
   },
   {
     id: 14,
@@ -308,8 +247,6 @@ Poster.create!([
     slug: "the-disinformants",
     poster_date: "2013-11-27",
     image_url: "2013.11.27.The-Disinformants.png",
-    previous: 13,
-    next: 15,
   },
   {
     id: 13,
@@ -319,8 +256,6 @@ Poster.create!([
     slug: "surf-and-turf",
     poster_date: "2013-11-17",
     image_url: "2013.11.17.Surf-and-Turf.png",
-    previous: 12,
-    next: 14,
   },
   {
     id: 12,
@@ -330,8 +265,6 @@ Poster.create!([
     slug: "black-jake-and-the-carnies-2",
     poster_date: "2013-10-25",
     image_url: "2013.10.25.Black-Jake-and-the-Carnies.png",
-    previous: 11,
-    next: 13,
   },
   {
     id: 11,
@@ -341,8 +274,6 @@ Poster.create!([
     slug: "chris-kasper-2",
     poster_date: "2013-09-27",
     image_url: "2013.9.27.Chris-Kasper.png",
-    previous: 10,
-    next: 12,
   },
   {
     id: 10,
@@ -352,8 +283,6 @@ Poster.create!([
     slug: "smittenfest",
     poster_date: "2013-07-20",
     image_url: "2013.7.20.Smittenfest.png",
-    previous: 9,
-    next: 11,
   },
   {
     id: 9,
@@ -363,8 +292,6 @@ Poster.create!([
     slug: "will-sessions",
     poster_date: "2013-06-15",
     image_url: "2013.6.15.Will-Sessions.png",
-    previous: 8,
-    next: 10,
   },
   {
     id: 8,
@@ -374,8 +301,6 @@ Poster.create!([
     slug: "black-jake-and-the-carnies-4",
     poster_date: "2013-04-25",
     image_url: "2013.4.25.Black-Jake-and-the-Carnies.png",
-    previous: 7,
-    next: 9,
   },
   {
     id: 7,
@@ -385,8 +310,6 @@ Poster.create!([
     slug: "mittenfest-vii",
     poster_date: "2012-12-28",
     image_url: "2012.12.28.Mittenfest-VII.png",
-    previous: 6,
-    next: 8,
   },
   {
     id: 6,
@@ -396,8 +319,6 @@ Poster.create!([
     slug: "almost-free",
     poster_date: "2012-12-22",
     image_url: "2012.12.22.Almost-Free.png",
-    previous: 6,
-    next: 8,
   },
   {
     id: 5,
@@ -407,8 +328,6 @@ Poster.create!([
     slug: "chris-kasper",
     poster_date: "2012-11-30",
     image_url: "2012.11.30.Chris-Kasper.png",
-    previous: 4,
-    next: 6,
   },
   {
     id: 4,
@@ -418,8 +337,6 @@ Poster.create!([
     slug: "chris-bathgate",
     poster_date: "2012-08-16",
     image_url: "2012.8.16.Chris-Bathgate.png",
-    previous: 3,
-    next: 5,
   },
   {
     id: 3,
@@ -429,8 +346,6 @@ Poster.create!([
     slug: "misty-lyn-and-the-big-beautiful",
     poster_date: "2012-07-14",
     image_url: "2012.7.14.Misty-Lyn-and-the-Big-Beautiful.png",
-    previous: 2,
-    next: 4,
   },
   {
     id: 2,
@@ -440,8 +355,6 @@ Poster.create!([
     slug: "matt-jones",
     poster_date: "2012-04-14",
     image_url: "2012.4.14.Matt-Jones.png",
-    previous: 1,
-    next: 3,
   },
   {
     id: 1,
@@ -451,7 +364,5 @@ Poster.create!([
     slug: "black-jake-and-the-carnies",
     poster_date: "2012-01-06",
     image_url: "2012.1.6.Black-Jake-and-the-Carnies.png",
-    previous: 0,
-    next: 2,
   }
 ])

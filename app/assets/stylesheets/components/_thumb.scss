@@ -15,6 +15,7 @@
 
 .poster-thumb {
   float: left;
+  padding: em(16);
   width: 100%;
 
   @include media($medium-screen-up) {

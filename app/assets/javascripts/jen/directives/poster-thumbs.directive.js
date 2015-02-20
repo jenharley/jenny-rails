@@ -5,16 +5,7 @@
 
   function posterThumbs(thumbs) {
     return {
-      template:
-        '<li class="poster-thumb" ng-repeat="poster in posters | limitTo: limit | orderBy: \'-id\'">' +
-          '<a href="/posters/{{ poster.slug }}">' +
-            '<img class="poster-thumb-img" ng-src="http://static.jenharley.com/posters/thumbs/{{ poster.image_url }}" alt="{{ poster.name }}" ng-if="!$last" />' +
-            '<img class="poster-thumb-img" ng-src="http://static.jenharley.com/posters/thumbs/{{ poster.image_url }}" alt="{{ poster.name }}" ng-if="$last" spinner-hider="" />' +
-            '<div class="poster-thumb-overlay animated">' +
-              '<h3 class="poster-thumb-title">{{ poster.name }}</h3>' +
-            '</div>' +
-          '</a>' +
-        '</li>',
+      templateUrl: '/pages/thumb',
       link: link,
     };
 

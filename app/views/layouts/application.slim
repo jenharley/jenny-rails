@@ -15,10 +15,12 @@ body(class=body_class ng-app="jen")
   = render "partials/header"
   = render "flashes"
 
-  main.main role="main" class="view-container"
+  main.main role="main"
     #spinner.spinner
-
-      iframe frameborder="0" height="40" scrolling="no" src="https://gfycat.com/ifr/InsecureLazyJaguar" style=("-webkit-backface-visibility: hidden;-webkit-transform: scale(1);") width="80"
+      video autoplay="" loop="" poster="//thumbs.gfycat.com/InsecureLazyJaguar-poster.jpg" width="65"
+        source src="//zippy.gfycat.com/InsecureLazyJaguar.webm" type="video/webm"
+        source src="//zippy.gfycat.com/InsecureLazyJaguar.mp4" type="video/mp4"
+        img src="//zippy.gfycat.com/InsecureLazyJaguar.gif"
 
     = yield
 

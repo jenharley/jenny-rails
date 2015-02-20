@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150216020457) do
+ActiveRecord::Schema.define(version: 20150220020359) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,8 +55,6 @@ ActiveRecord::Schema.define(version: 20150216020457) do
     t.date     "poster_date"
     t.string   "image_url",   limit: 255
     t.integer  "category_id"
-    t.integer  "previous"
-    t.integer  "next"
   end
 
   add_index "posters", ["name"], name: "index_posters_on_name", unique: true, using: :btree

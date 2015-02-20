@@ -1,0 +1,32 @@
+.blog-articles {
+  @include row;
+  padding-bottom: em(64);
+  text-align: center;
+}
+
+.blog-article {
+  @include span-columns(5);
+  @include shift(3.5);
+  padding: em(24) 0;
+
+  a {
+    color: $dark-gray;
+
+    &:hover {
+      .blog-article-title {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-date {
+    color: tint($dark-gray, 55%);
+    font-size: em(13);
+    letter-spacing: 1px;
+    padding-top: em(8);
+    text-transform: uppercase;
+  }
+
+  &-title {
+  }
+}

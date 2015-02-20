@@ -14,7 +14,7 @@
         scope.articles = theBlogs;
         scope.limit = attributes["limit"];
 
-        var format = 'MMMM Do YYYY';
+        var format = 'MMMM Do, YYYY';
         scope.formatDate = function(date) {
           return moment(date).add(1, 'days').format(format);
         }
