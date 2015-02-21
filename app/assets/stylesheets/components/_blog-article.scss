@@ -5,9 +5,13 @@
 }
 
 .blog-article {
-  @include span-columns(5);
-  @include shift(3.5);
-  padding: em(24) 0;
+  padding: em(24);
+
+  @include media($large-screen) {
+    @include span-columns(5);
+    @include shift(3.5);
+    padding: em(24) 0;
+  }
 
   a {
     color: $dark-gray;

@@ -27,9 +27,9 @@
     }
 
     svg {
-      height: $centered-navigation-height;
-      padding: 0.8em 0;
-      width: $centered-navigation-height;
+      height: em(36);
+      margin: 0.8em 0 0.8em 0.8em;
+      width: em(36);
     }
   }
 

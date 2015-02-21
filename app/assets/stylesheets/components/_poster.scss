@@ -1,7 +1,11 @@
 .poster {
   @include outer-container;
   @include row($direction: RTL);
-  padding: em(100) 0;
+  padding: em(30) 0;
+
+  @include media($large-screen) {
+    padding: em(100) 0;
+  }
 
   &-date {
     color: tint(#000, 57);
@@ -23,6 +27,8 @@
   }
 
   &-information {
+    padding: 0.625em;
+
     @include media($large-screen) {
       @include span-columns(3);
       padding: em(10) 0 0;
@@ -91,7 +97,11 @@
     padding: 0 0 em(100, 24);
 
     &--gallery {
-      padding-top: 8em;
+      padding-top: em(20);
+
+      @include media($medium-screen-up) {
+        padding-top: 8em;
+      }
     }
 
     &-heading {
@@ -99,7 +109,7 @@
       font-size: em(17);
       font-weight: 700;
       letter-spacing: 1px;
-      margin: (-1em) 0 em(24, 17);
+      margin: 1em 0 em(24, 17);
       text-align: center;
       text-transform: uppercase;
     }

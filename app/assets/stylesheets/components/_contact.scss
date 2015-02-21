@@ -2,9 +2,15 @@
   @include row;
 
   &-form {
-    @include span-columns(4);
-    @include shift(4);
+    padding: 0 em(20);
     padding-bottom: em(100);
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      @include shift(4);
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     form {
       background: none;
@@ -29,8 +35,8 @@
 
   p {
     margin: 0 auto;
+    max-width: em(480);
     padding-bottom: em(32);
     text-align: center;
-    width: em(480);
   }
 }
