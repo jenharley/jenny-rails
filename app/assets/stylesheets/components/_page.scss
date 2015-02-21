@@ -6,10 +6,6 @@
 
   &.hidden {
     animation: fadeOut 1900ms forwards;
-
-    .switchbox {
-      animation: fadeOut 1600ms forwards;
-    }
   }
 
   video {
