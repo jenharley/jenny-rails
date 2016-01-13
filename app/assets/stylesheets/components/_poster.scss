@@ -111,6 +111,10 @@
       margin: 1em 0 em(24, 17);
       text-align: center;
       text-transform: uppercase;
+
+      .home & {
+        color: transparentize($white, 0.20);
+      }
     }
   }
 }
