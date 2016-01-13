@@ -1,14 +1,13 @@
-figure.hero.hero--home
-  div(ng-include="'pages/home_hero.html'")
+.home
+  figure.hero.hero--home
+    div(ng-include="'pages/home_hero.html'")
 
-.poster-thumbs
-  h2.poster-thumbs-heading
-    | Recent Posters
-  ol.poster-thumbs
-    poster-thumbs limit="9"
+  .poster-thumbs
+    ol.poster-thumbs
+      poster-thumbs limit="9"
 
-.blog-articles
-  h2.poster-thumbs-heading
-    | Recent Blog Articles
-  ol
-    blog-articles limit="9"
+  .blog-articles
+    h2.poster-thumbs-heading
+      | Recent Blog Articles
+    ol
+      blog-articles limit="9"
