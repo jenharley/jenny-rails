@@ -3,7 +3,7 @@ class PostersController < ApplicationController
 
   # GET /posters
   def index
-    @posters = Poster.all
+    @posters = Poster.all.order(id: :desc)
 
     respond_to do |format|
       format.html
