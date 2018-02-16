@@ -8,7 +8,9 @@ end
 ruby "2.5.0"
 
 gem "autoprefixer-rails"
+gem "devise"
 gem "flutie"
+gem "friendly_id"
 gem "honeybadger"
 gem "jquery-rails"
 gem "pg", "~> 0.18"
@@ -17,9 +19,10 @@ gem "rack-canonical-host"
 gem "rails", "~> 5.1.4"
 gem "recipient_interceptor"
 gem "sass-rails", "~> 5.0"
+gem "simple_form"
 gem "skylight"
+gem "slim-rails"
 gem "sprockets", ">= 3.0.0"
-gem "suspenders"
 gem "title"
 gem "uglifier"
 
@@ -51,11 +54,12 @@ group :production do
   gem "rack-timeout"
 end
 
-gem 'high_voltage'
-gem 'bourbon', '~> 5.0'
-gem 'neat', '~> 2.1'
-gem 'refills', group: [:development, :test]
-gem 'spring-commands-rspec', group: :development
-gem 'rspec-rails', '~> 3.6', group: [:development, :test]
-gem 'shoulda-matchers', group: :test
-gem 'capybara-webkit', group: :test
+gem "high_voltage"
+gem "bourbon", "~> 5.0"
+gem "neat", "1.8.0"
+gem "normalize-rails", "~> 3.0.0"
+gem "refills", group: [:development, :test]
+gem "spring-commands-rspec", group: :development
+gem "rspec-rails", "~> 3.6", group: [:development, :test]
+gem "shoulda-matchers", group: :test
+gem "capybara-webkit", group: :test
