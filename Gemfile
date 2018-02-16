@@ -1,66 +1,61 @@
 source "https://rubygems.org"
 
-ruby "2.5.0"
-
-gem "airbrake"
-gem "autoprefixer-rails"
-gem "bourbon", "~> 4.1.0"
-gem "coffee-rails"
-gem "delayed_job_active_record", "~> 4.1.2"
-gem "devise"
-gem "email_validator"
-gem "flutie"
-gem "friendly_id"
-gem "high_voltage"
-gem "i18n-tasks"
-gem "jbuilder"
-gem "jquery-rails"
-gem "neat", "1.8.0"
-gem "newrelic_rpm", ">= 3.7.3"
-gem "normalize-rails", "~> 3.0.0"
-gem "pg"
-gem "rack-timeout"
-gem "rails"
-gem "rails_admin"
-gem "recipient_interceptor"
-gem "sass-rails"
-gem "simple_form"
-gem "sky-labels-rails"
-gem "slim-rails"
-gem "title"
-gem "uglifier"
-gem "unicorn"
-source "https://rails-assets.org" do
-  gem "rails-assets-angular"
-  gem "rails-assets-angular-route"
-  gem "rails-assets-angular-resource"
-  gem "rails-assets-angular-social-links"
-  gem "rails-assets-moment"
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
 end
 
+ruby "2.5.0"
+
+gem "autoprefixer-rails"
+gem "flutie"
+gem "honeybadger"
+gem "jquery-rails"
+gem "pg", "~> 0.18"
+gem "puma"
+gem "rack-canonical-host"
+gem "rails", "~> 5.1.4"
+gem "recipient_interceptor"
+gem "sass-rails", "~> 5.0"
+gem "skylight"
+gem "sprockets", ">= 3.0.0"
+gem "suspenders"
+gem "title"
+gem "uglifier"
+
+
 group :development do
+  gem "listen"
+  gem "rack-mini-profiler", require: false
   gem "spring"
-  gem "spring-commands-rspec"
+  gem "web-console"
 end
 
 group :development, :test do
   gem "awesome_print"
-  gem "byebug"
+  gem "bundler-audit", ">= 0.5.0", require: false
   gem "dotenv-rails"
-  gem "factory_bot_rails"
+  gem "pry-byebug"
   gem "pry-rails"
-  gem "rspec-rails"
 end
 
 group :test do
-  gem "capybara-webkit", ">= 1.2.0"
-  gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
-  gem "shoulda-matchers", require: false
+  gem "simplecov", require: false
   gem "timecop"
   gem "webmock"
 end
 
-group :staging, :production do
+group :production do
+  gem "rack-timeout"
 end
+
+gem 'high_voltage'
+gem 'bourbon', '~> 5.0'
+gem 'neat', '~> 2.1'
+gem 'refills', group: [:development, :test]
+gem 'spring-commands-rspec', group: :development
+gem 'rspec-rails', '~> 3.6', group: [:development, :test]
+gem 'shoulda-matchers', group: :test
+gem 'capybara-webkit', group: :test

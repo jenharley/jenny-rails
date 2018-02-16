@@ -1,8 +1,6 @@
-Jenny-rails
-===========
+# App
 
-Getting Started
----------------
+## Getting Started
 
 After you have cloned this repo, run this setup script to set up your machine
 with the necessary dependencies to run and test this app:
@@ -14,18 +12,13 @@ your machine with [this script].
 
 [this script]: https://github.com/thoughtbot/laptop
 
-After setting up, you can run the application using [foreman]:
+After setting up, you can run the application using [Heroku Local]:
 
-    % foreman start
+    % heroku local
 
-If you don't have `foreman`, see [Foreman's install instructions][foreman]. It
-is [purposefully excluded from the project's `Gemfile`][exclude].
+[Heroku Local]: https://devcenter.heroku.com/articles/heroku-local
 
-[foreman]: https://github.com/ddollar/foreman
-[exclude]: https://github.com/ddollar/foreman/pull/437#issuecomment-41110407
-
-Guidelines
-----------
+## Guidelines
 
 Use the following guides for getting things done, programming well, and
 programming in style.
@@ -33,3 +26,11 @@ programming in style.
 * [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
 * [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
 * [Style](http://github.com/thoughtbot/guides/blob/master/style)
+
+## Deploying
+
+If you have previously run the `./bin/setup` script,
+you can deploy to staging and production with:
+
+    % ./bin/deploy staging
+    % ./bin/deploy production
