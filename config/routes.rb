@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :lighthouses
   namespace :admin do
     resources :users
     resources :posters

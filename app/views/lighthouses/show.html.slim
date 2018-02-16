@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @lighthouse.title
+p
+  strong Location:
+  = @lighthouse.location
+
+=> link_to 'Edit', edit_lighthouse_path(@lighthouse)
+'|
+=< link_to 'Back', lighthouses_path

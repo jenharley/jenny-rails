@@ -1,0 +1,23 @@
+h1 Listing lighthouses
+
+table
+  thead
+    tr
+      th Title
+      th Location
+      th
+      th
+      th
+
+  tbody
+    - @lighthouses.each do |lighthouse|
+      tr
+        td = lighthouse.title
+        td = lighthouse.location
+        td = link_to 'Show', lighthouse
+        td = link_to 'Edit', edit_lighthouse_path(lighthouse)
+        td = link_to 'Destroy', lighthouse, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Lighthouse', new_lighthouse_path
