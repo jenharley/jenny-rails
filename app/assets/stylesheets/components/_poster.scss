@@ -1,0 +1,120 @@
+.poster {
+  @include outer-container;
+  @include row($direction: RTL);
+  padding: em(30) 0;
+
+  @include media($large-screen) {
+    padding: em(100) 0;
+  }
+
+  &-date {
+    color: tint(#000, 57);
+    font-family: $serif;
+    font-size: em(15);
+    padding: em(8, 15) 0 0;
+  }
+
+  &-image {
+    padding: em(10);
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      float: left;
+      margin-left: 8.5298%;
+      margin-right: 0;
+      padding: 0;
+    }
+  }
+
+  &-information {
+    padding: 0.625em;
+
+    @include media($large-screen) {
+      @include span-columns(3);
+      padding: em(10) 0 0;
+    }
+  }
+
+  &-nav {
+    @include row($direction: LTR);
+    margin-top: em(36);
+    padding: 0 em(10);
+
+    @include media($large-screen) {
+      padding: 0;
+    }
+
+    li {
+      @include span-columns(6);
+      list-style: none;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+
+  &-social {
+    @include row;
+    padding: 0 em(10);
+
+    @include media($large-screen) {
+      padding: 0;
+    }
+
+    li {
+      @include span-columns(3);
+      list-style: none;
+
+      a {
+        @include hide-text;
+        background-size: em(32);
+        display: block;
+        height: em(36);
+        width: 100%;
+      }
+    }
+
+    [social-twitter] {
+      background: #54abed image_url('twitter-icon.svg') no-repeat center;
+    }
+
+    [social-facebook] {
+      background: #304ea8 image_url('facebook-square-icon.svg') no-repeat center;
+    }
+
+    [social-pinterest] {
+      background: #bf1b1b image_url('pinterest-icon.svg') no-repeat center;
+    }
+
+    [social-reddit] {
+      background: #76addd image_url('reddit-icon.svg') no-repeat center;
+    }
+  }
+
+  &-thumbs {
+    padding: 0 0 em(100, 24);
+
+    &--gallery {
+      padding-top: em(20);
+
+      @include media($medium-screen-up) {
+        padding-top: 8em;
+      }
+    }
+
+    &-heading {
+      color: #3e4552;
+      font-size: em(17);
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin: 1em 0 em(24, 17);
+      text-align: center;
+      text-transform: uppercase;
+
+      .home & {
+        color: transparentize($white, 0.20);
+      }
+    }
+  }
+}
