@@ -7,6 +7,7 @@ end
 
 ruby "2.5.0"
 
+gem "administrate"
 gem "autoprefixer-rails"
 gem "devise"
 gem "flutie"
