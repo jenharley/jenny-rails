@@ -1,0 +1,42 @@
+<%= form_with(model: poster, local: true) do |form| %>
+  <% if poster.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(poster.errors.count, "error") %> prohibited this poster from being saved:</h2>
+
+      <ul>
+      <% poster.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :poster_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slug %>
+    <%= form.text_field :slug, id: :poster_slug %>
+  </div>
+
+  <div class="field">
+    <%= form.label :poster_date %>
+    <%= form.date_select :poster_date, id: :poster_poster_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_url %>
+    <%= form.text_field :image_url, id: :poster_image_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category_id %>
+    <%= form.number_field :category_id, id: :poster_category_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
