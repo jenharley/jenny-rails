@@ -1,12 +1,12 @@
 source "https://rubygems.org"
 
-ruby "2.3.0"
+ruby "2.5.0"
 
 gem "airbrake"
 gem "autoprefixer-rails"
 gem "bourbon", "~> 4.1.0"
 gem "coffee-rails"
-gem "delayed_job_active_record"
+gem "delayed_job_active_record", "~> 4.1.2"
 gem "devise"
 gem "email_validator"
 gem "flutie"
