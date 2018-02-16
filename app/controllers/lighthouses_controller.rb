@@ -5,10 +5,19 @@ class LighthousesController < ApplicationController
   # GET /lighthouses
   def index
     @lighthouses = Lighthouse.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @lighthouses }
+    end
   end
 
   # GET /lighthouses/1
   def show
+    respond_to do |format|
+      format.html
+      format.json { render json: @lighthouse }
+    end
   end
 
   # GET /lighthouses/new

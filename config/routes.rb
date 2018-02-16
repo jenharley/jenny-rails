@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  scope "api", defaults: {format: :json} do
+    resources :posters
+    resources :lighthouses
+  end
+
   namespace :admin do
     resources :users
     resources :posters
