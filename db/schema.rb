@@ -10,16 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180216211430) do
+ActiveRecord::Schema.define(version: 20180216221357) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "lighthouses", force: :cascade do |t|
     t.string "title"
-    t.point "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "latitude"
+    t.float "longitude"
+    t.string "description"
+    t.string "instagram"
   end
 
   create_table "posters", force: :cascade do |t|

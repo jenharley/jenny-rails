@@ -13,7 +13,9 @@ table
     - @lighthouses.each do |lighthouse|
       tr
         td = lighthouse.title
-        td = lighthouse.location
+        td = lighthouse.latitude
+        td = lighthouse.longitude
+        td = lighthouse.instagram
         td = link_to 'Show', lighthouse
         td = link_to 'Edit', edit_lighthouse_path(lighthouse)
         td = link_to 'Destroy', lighthouse, data: { confirm: 'Are you sure?' }, method: :delete

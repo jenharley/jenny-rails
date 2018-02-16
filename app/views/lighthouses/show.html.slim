@@ -4,8 +4,14 @@ p
   strong Title:
   = @lighthouse.title
 p
+  strong Latitude:
+  = @lighthouse.latitude
+p
   strong Location:
-  = @lighthouse.location
+  = @lighthouse.longitude
+p
+  strong Instagram:
+  = @lighthouse.instagram
 
 => link_to 'Edit', edit_lighthouse_path(@lighthouse)
 '|
