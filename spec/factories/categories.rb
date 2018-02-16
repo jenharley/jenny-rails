@@ -1,6 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :category do
-    
+
   end
 
 end

@@ -100,10 +100,10 @@ GEM
     erubi (1.7.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    factory_girl (4.9.0)
+    factory_bot (4.8.2)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
+    factory_bot_rails (4.8.2)
+      factory_bot (~> 4.8.2)
       railties (>= 3.0.0)
     ffi (1.9.18)
     flutie (2.0.0)
@@ -173,8 +173,8 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
-    neat (2.1.0)
-      sass (~> 3.4)
+    neat (1.8.0)
+      sass (>= 3.3)
       thor (~> 0.19)
     nested_form (0.3.2)
     newrelic_rpm (4.7.1.340)
@@ -354,7 +354,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   email_validator
-  factory_girl_rails
+  factory_bot_rails
   flutie
   formulaic
   friendly_id
@@ -363,7 +363,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   launchy
-  neat
+  neat (= 1.8.0)
   newrelic_rpm (>= 3.7.3)
   normalize-rails (~> 3.0.0)
   pg
@@ -395,4 +395,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.15.3
+   1.16.1
