@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20180216193541) do
     t.string "slug"
     t.date "poster_date"
     t.string "image_url"
-    t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
