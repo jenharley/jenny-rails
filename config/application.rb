@@ -24,5 +24,15 @@ module App
     config.action_controller.action_on_unpermitted_parameters = :raise
     config.load_defaults 5.1
     config.generators.system_tests = nil
+
+    config.action_mailer.smtp_settings = {
+      :address => 'smtp.sendgrid.net',
+      :port                 => 587,
+      :domain               => "smharley.com",
+      :user_name            => "smharley",
+      :password             => ENV["JENNY_MAIL"],
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
   end
 end
