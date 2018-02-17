@@ -20,7 +20,7 @@
 }
 
 .poster-list {
-  margin-top: $large-spacing;
+  margin-top: $base-spacing;
 
   @include media($medium-screen-up) {
     display: flex;
@@ -72,15 +72,10 @@
 }
 
 .poster-meta {
-  @include media($medium-screen-up) {
-    order: 2;
-  }
-}
-
-.poster-name {
   text-align: center;
 
   @include media($medium-screen-up) {
+    order: 2;
     text-align: left;
   }
 }
