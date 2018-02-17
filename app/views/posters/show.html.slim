@@ -1,6 +1,8 @@
-p
-  = @poster.name
-p
-  = @poster.poster_date.strftime('%B %e, %Y')
+.poster
+  .poster-meta
+    h1.poster-name
+      = @poster.name
+    p.poster-date
+      = @poster.poster_date.strftime('%B %e, %Y')
 
-  = image_tag @poster_host_url + @poster.image_url
+  = image_tag @poster_host_url + @poster.image_url, class: "poster-image"

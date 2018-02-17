@@ -1,3 +1,8 @@
-= link_to poster_path(poster) do
-  p
-    = poster.name
+= link_to poster_path(poster), class: "poster-list-link" do
+  = image_tag poster_thumb_host_url + poster.image_url, class: "poster-image"
+
+  .poster-meta
+    h2.poster-name
+      = poster.name
+    p.poster-date
+      = poster.poster_date.strftime('%B %e, %Y')

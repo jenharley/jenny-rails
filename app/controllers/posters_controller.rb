@@ -5,6 +5,7 @@ class PostersController < ApplicationController
   # GET /posters
   def index
     @posters = Poster.all
+    @poster_thumb_host_url = poster_thumb_host_url
 
     respond_to do |format|
       format.html
@@ -61,6 +62,10 @@ class PostersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def poster_host_url
       "//static.jenharley.com/posters/large/"
+    end
+
+    def poster_thumb_host_url
+      "//static.jenharley.com/posters/thumbs/"
     end
 
     def set_poster

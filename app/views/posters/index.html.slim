@@ -1,7 +1,8 @@
-h1
-  | Posters
+h1.page-heading
+  | Recent Posters
 
-ol
+ol.poster-list
   - @posters.each do |poster|
-    li
-      = render partial: "posters/poster", locals: { poster: poster }
+    li.poster-list-item
+      = render partial: "posters/poster", locals: { poster: poster,
+        poster_thumb_host_url: @poster_thumb_host_url }
