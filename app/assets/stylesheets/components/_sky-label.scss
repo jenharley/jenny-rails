@@ -1,4 +1,7 @@
 .sky-label {
+  margin-top: 15px;
+  position: relative;
+
   input[type='text'],
   input[type='password'],
   input[type='email'],
@@ -6,15 +9,16 @@
     background: $light-gray;
     border: 0;
     box-shadow: none;
-    padding: em(26) 0 em(16) em(20);
+    padding: 26px 0 16px 20px;
   }
 
   label {
     background: transparent;
     color: shade($medium-gray, 20);
-    left: em(20);
+    left: 20px;
     padding: 0;
-    top: em(19);
+    position: absolute;
+    top: 19px;
     transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
 
@@ -23,10 +27,10 @@
     label {
       background: transparent;
       color: $medium-gray;
-      font-size: em(12);
-      left: rem(20);
+      font-size: 12px;
+      left: 20px;
       opacity: 1;
-      top: rem(9);
+      top: 9px;
     }
   }
 }

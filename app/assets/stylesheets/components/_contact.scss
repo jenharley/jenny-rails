@@ -1,9 +1,10 @@
 .contact {
   @include row;
+  padding: 48px 0;
 
   &-form {
-    padding: 0 em(20);
-    padding-bottom: em(100);
+    padding: 0 24px;
+    padding-bottom: 100px;
 
     @include media($large-screen) {
       @include span-columns(4);
@@ -18,7 +19,7 @@
   }
 
   &-back {
-    padding: em(48) 0 em(8);
+    padding: 48px 0 8px;
     text-align: center;
 
     a {
@@ -29,14 +30,14 @@
   }
 
   &-header {
-    padding: em(48) 0 em(8);
+    padding: 48px 0 8px;
     text-align: center;
   }
 
   p {
     margin: 0 auto;
-    max-width: em(480);
-    padding-bottom: em(32);
+    max-width: 480px;
+    padding-bottom: 32px;
     text-align: center;
   }
 }

@@ -1,21 +1,21 @@
 .poster {
   @include outer-container;
   @include row($direction: RTL);
-  padding: em(30) 0;
+  padding: 30px 0;
 
   @include media($large-screen) {
-    padding: em(100) 0;
+    padding: 100px 0;
   }
 
   &-date {
     color: tint(#000, 57);
     font-family: $serif;
-    font-size: em(15);
-    padding: em(8, 15) 0 0;
+    font-size: 15px;
+    padding: 8px 0 0;
   }
 
   &-image {
-    padding: em(10);
+    padding: 10px;
 
     @include media($large-screen) {
       @include span-columns(8);
@@ -31,14 +31,14 @@
 
     @include media($large-screen) {
       @include span-columns(3);
-      padding: em(10) 0 0;
+      padding: 10px 0 0;
     }
   }
 
   &-nav {
     @include row($direction: LTR);
-    margin-top: em(36);
-    padding: 0 em(10);
+    margin-top: 36px;
+    padding: 0 10px;
 
     @include media($large-screen) {
       padding: 0;
@@ -56,7 +56,7 @@
 
   &-social {
     @include row;
-    padding: 0 em(10);
+    padding: 0 10px;
 
     @include media($large-screen) {
       padding: 0;
@@ -68,9 +68,9 @@
 
       a {
         @include hide-text;
-        background-size: em(32);
+        background-size: 32px;
         display: block;
-        height: em(36);
+        height: 36px;
         width: 100%;
       }
     }
@@ -93,10 +93,10 @@
   }
 
   &-thumbs {
-    padding: 0 0 em(100, 24);
+    padding: 0 0 100px;
 
     &--gallery {
-      padding-top: em(20);
+      padding-top: 20px;
 
       @include media($medium-screen-up) {
         padding-top: 8em;
@@ -105,10 +105,10 @@
 
     &-heading {
       color: #3e4552;
-      font-size: em(17);
+      font-size: 17px;
       font-weight: 700;
       letter-spacing: 1px;
-      margin: 1em 0 em(24, 17);
+      margin: 1em 0 24px;
       text-align: center;
       text-transform: uppercase;
 

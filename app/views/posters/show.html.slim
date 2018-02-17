@@ -1,0 +1,6 @@
+p
+  = @poster.name
+p
+  = @poster.poster_date.strftime('%B %e, %Y')
+
+  = image_tag @poster_host_url + @poster.image_url

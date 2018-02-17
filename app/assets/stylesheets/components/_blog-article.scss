@@ -1,16 +1,16 @@
 .blog-articles {
   @include row;
-  padding-bottom: em(64);
+  padding-bottom: 64px;
   text-align: center;
 }
 
 .blog-article {
-  padding: em(24);
+  padding: 24px;
 
   @include media($large-screen) {
     @include span-columns(5);
     @include shift(3.5);
-    padding: em(24) 0;
+    padding: 24px 0;
   }
 
   a {
@@ -25,9 +25,9 @@
 
   &-date {
     color: tint($dark-gray, 55%);
-    font-size: em(13);
+    font-size: 13px;
     letter-spacing: 1px;
-    padding-top: em(8);
+    padding-top: 8px;
     text-transform: uppercase;
   }
 }

@@ -14,6 +14,8 @@ class PostersController < ApplicationController
 
   # GET /posters/1
   def show
+    @poster_host_url = poster_host_url
+
     respond_to do |format|
       format.html
       format.json { render json: @lighthouse }
@@ -57,6 +59,10 @@ class PostersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def poster_host_url
+      "//static.jenharley.com/posters/large/"
+    end
+
     def set_poster
       @poster = Poster.friendly.find(params[:id])
     end

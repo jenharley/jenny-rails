@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   resources :posters
   resources :lighthouses
 
+  get "contact" => "contact#new", :as => "contact"
+  post "contact" => "contact#create"
+
   scope "api", defaults: {format: :json} do
     resources :posters
     resources :lighthouses
