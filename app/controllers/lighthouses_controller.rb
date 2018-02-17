@@ -7,7 +7,7 @@ class LighthousesController < ApplicationController
     @lighthouses = Lighthouse.all
 
     respond_to do |format|
-      format.html
+      format.html { render :index }
       format.json { render json: @lighthouses }
     end
   end
@@ -15,7 +15,7 @@ class LighthousesController < ApplicationController
   # GET /lighthouses/1
   def show
     respond_to do |format|
-      format.html
+      format.html { render :show }
       format.json { render json: @lighthouse }
     end
   end

@@ -1,0 +1,7 @@
+h1
+  | Posters
+
+ol
+  - @posters.each do |poster|
+    li
+      = render partial: "posters/poster", locals: { poster: poster }

@@ -5,10 +5,19 @@ class PostersController < ApplicationController
   # GET /posters
   def index
     @posters = Poster.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @lighthouses }
+    end
   end
 
   # GET /posters/1
   def show
+    respond_to do |format|
+      format.html
+      format.json { render json: @lighthouse }
+    end
   end
 
   # GET /posters/new
