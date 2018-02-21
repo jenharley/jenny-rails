@@ -4,9 +4,11 @@ head
   meta charset="utf-8"
   meta name="ROBOTS" content="NOODP"
   meta name="viewport" content="initial-scale=1"
-  base href="/"
   title
-    = title
+    - if content_for?(:title)
+      = yield :title
+    - else
+      = title
   link href="/favicon.ico" rel="icon" type="image/png"
 
   = stylesheet_link_tag :application, media: "all"
