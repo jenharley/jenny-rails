@@ -5,4 +5,5 @@
     p.poster-date
       = @poster.poster_date.strftime('%B %e, %Y')
 
-  = image_tag @poster_host_url + @poster.image_url, class: "poster-image"
+  .poster-image
+    = image_tag @poster_host_url + @poster.image_url
