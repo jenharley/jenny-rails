@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :posters
   resources :lighthouses
 
+  root to: "posters#home"
   get "contact" => "contact#new", :as => "contact"
   post "contact" => "contact#create"
 

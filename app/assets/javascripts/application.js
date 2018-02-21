@@ -1,5 +1,6 @@
 //= require rails-ujs
 //= require jquery
+//= require moment
 //= require_tree .
 
 var setupSkyLabels = function () {
@@ -38,3 +39,44 @@ var setupSkyLabels = function () {
 };
 
 setupSkyLabels();
+
+$(document).ready(function(){
+  var feed = "http://blog.jenharley.com/feed.xml";
+  var $blogList = $("[data-blog]");
+
+  if ($blogList.length) {
+    $.ajax(feed, {
+      accepts:{
+        xml:"application/rss+xml"
+      },
+      dataType:"xml",
+      success:function(data) {
+        $(data).find("entry").each(function () {
+          var el = $(this);
+          var date = moment(el.find("published").text()).format("MMMM Do, YYYY");
+          var $entry = $("<li class='blog-article'></li>");
+
+          $entry.append("<a href='" + el.find("link").attr("href") + "'><h3 class='blog-article-title'>" + el.find("title").text() + "</h3><p class='blog-article-date'>" + date + "</p></a>");
+          $blogList.append($entry);
+        });
+      }
+    });
+  }
+});
+
+$(document).ready(function() {
+  var menu, menuToggle;
+
+  menu = $("[data-js='menu']");
+  menuToggle = $("[data-js='menu-toggle']");
+
+  $(menuToggle).on("click", function(e) {
+    e.preventDefault();
+
+    return menu.slideToggle(function() {
+      if (menu.is(":hidden")) {
+        return menu.removeAttr("style");
+      }
+    });
+  });
+});

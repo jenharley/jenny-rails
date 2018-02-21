@@ -1,0 +1,17 @@
+.store-page main {
+  background-image: image-url("store.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.store {
+  align-items: center;
+  background-color: rgba($black, 0.4);
+  color: $white;
+  display: flex;
+  font-size: 32px;
+  font-weight: bold;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}

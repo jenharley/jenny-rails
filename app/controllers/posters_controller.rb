@@ -1,6 +1,12 @@
 class PostersController < ApplicationController
   before_action :set_poster, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show, :home]
+
+  # GET /
+  def home
+    @posters = Poster.last(8).reverse
+    @poster_thumb_host_url = poster_thumb_host_url
+  end
 
   # GET /posters
   def index
