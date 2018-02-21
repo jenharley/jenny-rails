@@ -59,6 +59,7 @@
     background-color: rgba($black, 0.4);
     color: $white;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     opacity: 0;
@@ -73,10 +74,6 @@
 
   .poster-image {
     display: block;
-  }
-
-  .poster-name {
-    margin-bottom: 0;
   }
 }
 
