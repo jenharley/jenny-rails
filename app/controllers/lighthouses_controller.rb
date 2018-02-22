@@ -5,10 +5,27 @@ class LighthousesController < ApplicationController
   # GET /lighthouses
   def index
     @lighthouses = Lighthouse.all
+    @geojson = Array.new
+
+    @lighthouses.each do |lighthouse|
+      @geojson << {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [lighthouse.longitude, lighthouse.latitude]
+        },
+        properties: {
+          name: lighthouse.title,
+          :'marker-color' => '#00607d',
+          :'marker-symbol' => 'circle',
+          :'marker-size' => 'medium'
+        }
+      }
+    end
 
     respond_to do |format|
       format.html { render :index }
-      format.json { render json: @lighthouses }
+      format.json { render json: @geojson }
     end
   end
 

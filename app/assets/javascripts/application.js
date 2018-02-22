@@ -1,6 +1,7 @@
 //= require rails-ujs
 //= require jquery
 //= require moment
+//= require lighthouse
 //= require_tree .
 
 var setupSkyLabels = function () {

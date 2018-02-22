@@ -15,6 +15,7 @@ class LighthouseDashboard < Administrate::BaseDashboard
     latitude: Field::Number.with_options(decimals: 2),
     longitude: Field::Number.with_options(decimals: 2),
     description: Field::String,
+    instagram: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -39,6 +40,7 @@ class LighthouseDashboard < Administrate::BaseDashboard
     :latitude,
     :longitude,
     :description,
+    :instagram,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -49,6 +51,7 @@ class LighthouseDashboard < Administrate::BaseDashboard
     :latitude,
     :longitude,
     :description,
+    :instagram,
   ].freeze
 
   # Overwrite this method to customize how lighthouses are displayed
