@@ -19,7 +19,13 @@ Lighthouses.init = {
               var a = data[i];
               var title = a["properties"]["name"];
               var marker = L.marker(new L.LatLng(a["geometry"]["coordinates"][1], a["geometry"]["coordinates"][0]), { title: title });
-              marker.bindPopup(title);
+              var popupContent = "<p>" + title + "</p>";
+
+              if (a["properties"]["instagram"] !== null) {
+                popupContent = "<img src='" + a["properties"]["instagram"] + "'/>" + popupContent;
+              }
+
+              marker.bindPopup(popupContent, {minWidth: 300});
               markers.addLayer(marker);
             }
             map.addLayer(markers);

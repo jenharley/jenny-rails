@@ -16,9 +16,7 @@ class LighthousesController < ApplicationController
         },
         properties: {
           name: lighthouse.title,
-          :'marker-color' => '#00607d',
-          :'marker-symbol' => 'circle',
-          :'marker-size' => 'medium'
+          instagram: lighthouse.instagram,
         }
       }
     end
