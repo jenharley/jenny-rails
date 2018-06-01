@@ -51,7 +51,7 @@ gem "suspenders", group: [:development, :test]
 
 gem 'high_voltage'
 gem 'bourbon', '~> 5.0'
-gem 'neat', '~> 2.1'
+gem 'neat', '1.8.0'
 gem 'spring-commands-rspec', group: :development
 gem 'rspec-rails', '~> 3.6', group: [:development, :test]
 gem 'shoulda-matchers', group: :test
