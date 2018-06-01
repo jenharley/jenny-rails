@@ -1,2 +1,0 @@
-class Lighthouse < ApplicationRecord
-end
