@@ -1,0 +1,22 @@
+.auth {
+  margin: 0 auto;
+  max-width: 480px;
+  padding-top: 56px;
+
+  &-heading {
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  &-input {
+    display: block;
+    margin-bottom: 24px;
+    padding: 6px;
+    width: 100%;
+  }
+
+  &-forgot {
+    float: right;
+    margin-top: -32px;
+  }
+}

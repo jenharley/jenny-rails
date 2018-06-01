@@ -1,0 +1,2 @@
+class Lighthouse < ApplicationRecord
+end

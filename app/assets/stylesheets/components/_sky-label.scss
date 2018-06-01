@@ -1,0 +1,36 @@
+.sky-label {
+  margin-top: 15px;
+  position: relative;
+
+  input[type='text'],
+  input[type='password'],
+  input[type='email'],
+  textarea {
+    background: $light-gray;
+    border: 0;
+    box-shadow: none;
+    padding: 26px 0 16px 20px;
+  }
+
+  label {
+    background: transparent;
+    color: shade($medium-gray, 20);
+    left: 20px;
+    padding: 0;
+    position: absolute;
+    top: 19px;
+    transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+
+  &-focused,
+  &-has-text {
+    label {
+      background: transparent;
+      color: $medium-gray;
+      font-size: 12px;
+      left: 20px;
+      opacity: 1;
+      top: 9px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+= form_for @lighthouse do |f|
+  - if @lighthouse.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@lighthouse.errors.count, "error")} prohibited this lighthouse from being saved:"
+      ul
+        - @lighthouse.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :description
+    = f.text_field :description, as: :textarea
+  .field
+    = f.label :instagram
+    = f.text_field :instagram
+  .field
+    = f.label :latitude
+    = f.text_field :latitude
+  .field
+    = f.label :longitude
+    = f.text_field :longitude
+  .actions = f.submit

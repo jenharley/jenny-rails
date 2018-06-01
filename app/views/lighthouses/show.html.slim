@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @lighthouse.title
+p
+  strong Latitude:
+  = @lighthouse.latitude
+p
+  strong Location:
+  = @lighthouse.longitude
+p
+  strong Instagram:
+  = @lighthouse.instagram
+
+=> link_to 'Edit', edit_lighthouse_path(@lighthouse)
+'|
+=< link_to 'Back', lighthouses_path
