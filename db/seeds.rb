@@ -342,162 +342,207 @@ Lighthouse.create!([
     longitude: "-83.4229",
     title: "Alpena Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/alpena.jpg"
   },
   {
     latitude: "46.67306",
     longitude: "-86.13933",
     title: "Au Sable Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/au-sable.jpg"
+
   },
   {
     latitude: "44.40662",
     longitude: "-83.3165",
     title: "Au Sable North Pierhead Light",
     description: "",
+
   },
   {
     latitude: "45.74278",
     longitude: "-85.50861",
     title: "Beaver Island Harbor Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/beaver-island-harbor.jpg"
+
   },
   {
     latitude: "45.57639",
     longitude: "-85.5725",
     title: "Beaver Island Head Light",
     description: "",
+
   },
   {
     latitude: "46.84028",
     longitude: "-87.68194",
     title: "Big Bay Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/big-bay-point.jpg"
+
   },
   {
     latitude: "44.05772",
     longitude: "-86.51444",
     title: "Big Sable Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/big-sable-point.jpg"
+
   },
   {
     latitude: "45.811",
     longitude: "-84.422",
     title: "Bois Blanc Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/bois-blanc-island.jpg"
+
   },
   {
     latitude: "43.94347",
     longitude: "-83.27278",
     title: "Caseville Harbor Light",
     description: "",
+
   },
   {
     latitude: "45.40735",
     longitude: "-87.35103",
     title: "Cedar River Light",
     description: "",
+
   },
   {
     latitude: "44.03139",
     longitude: "-83.43556",
     title: "Charity Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/charity-island.jpg"
+
   },
   {
     latitude: "45.32278",
     longitude: "-85.26972",
     title: "Charlevoix South Pier Light Station",
     description: "",
+
   },
   {
     latitude: "45.6568",
     longitude: "-84.465",
     title: "Cheboygan Crib Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/cheboygan-crib.jpg"
+
   },
   {
     latitude: "45.64739",
     longitude: "-84.47276",
     title: "Cheboygan River Front Range Light",
     description: "",
+
   },
   {
     latitude: "47.48111",
     longitude: "-87.86667",
     title: "Copper Harbor Front Range Light",
     description: "",
+
   },
   {
     latitude: "47.47447",
     longitude: "-87.86025",
     title: "Copper Harbor Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/copper-harbor.jpg"
   },
   {
     latitude: "46.75288",
     longitude: "-85.25733",
     title: "Crisp Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/crisp-point.jpg"
+
   },
   {
     latitude: "45.94892",
     longitude: "-83.90305",
     title: "DeTour Reef Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/detour-reef.jpg"
+
   },
   {
     latitude: "42.00075",
     longitude: "-83.14068",
     title: "Detroit River Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/alpena.jpg"
+
   },
   {
     latitude: "47.45972",
     longitude: "-88.15917",
     title: "Eagle Harbor Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/detroit-river.jpg"
+
   },
   {
     latitude: "47.45562",
     longitude: "-88.15339",
     title: "Eagle Harbor Range Lights",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/eagle-harbor.jpg"
+
   },
   {
     latitude: "47.41369",
     longitude: "-88.29828",
     title: "Eagle River Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/eagle-river.jpg"
+
   },
   {
     latitude: "43.0063",
     longitude: "-82.42247",
     title: "Fort Gratiot Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/fort-gratiot.jpg"
+
   },
   {
     latitude: "45.48667",
     longitude: "-83.91333",
     title: "Forty Mile Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/forty-mile-point.jpg"
+
   },
   {
     latitude: "45.67981",
     longitude: "-84.435",
     title: "Fourteen Foot Shoal Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/fourteen-foot-shoal.jpg"
+
   },
   {
     latitude: "46.99285",
     longitude: "-89.12573",
     title: "Fourteen Mile Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/fourteen-mile-point.jpg"
+
   },
   {
     latitude: "44.6306",
     longitude: "-86.2522",
     title: "Frankfort Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/frankfort-north-breakwater.jpg"
+
   },
   {
     latitude: "45.98545",
@@ -516,30 +561,40 @@ Lighthouse.create!([
     longitude: "-86.25592",
     title: "Grand Haven South Pierhead Entrance Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/grand-haven-south-pierhead-entrance.jpg"
+
   },
   {
     latitude: "43.05725",
     longitude: "-86.25381",
     title: "Grand Haven South Pierhead Inner Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/grand-haven-south-pierhead-inner.jpg"
+
   },
   {
     latitude: "46.45017",
     longitude: "-86.62242",
     title: "Grand Island East Channel Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/grand-island-east-channel.jpg"
+
   },
   {
     latitude: "46.43667",
     longitude: "-86.69111",
     title: "Grand Island Harbor Rear Range Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/grand-island-harbor-rear-range.jpg"
+
   },
   {
     latitude: "46.55889",
     longitude: "-86.69111",
     title: "Grand Island North Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/grand-island-north.jpg"
+
   },
   {
     latitude: "46.68389",
@@ -552,18 +607,24 @@ Lighthouse.create!([
     longitude: "-85.55",
     title: "Grand Traverse Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/grand-traverse.jpg"
+
   },
   {
     latitude: "46.72083",
     longitude: "-87.41194",
     title: "Granite Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/granite-island.jpg"
+
   },
   {
     latitude: "44.01833",
     longitude: "-83.53722",
     title: "Gravelly Shoal Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/gravelly-shoal.jpg"
+
   },
   {
     latitude: "45.76667",
@@ -576,6 +637,8 @@ Lighthouse.create!([
     longitude: "-87.66361",
     title: "Gull Rock Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/gull-rock.jpg"
+
   },
   {
     latitude: "43.845",
@@ -588,12 +651,14 @@ Lighthouse.create!([
     longitude: "-86.21242",
     title: "Holland Harbor Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/holland-harbor.jpg"
   },
   {
     latitude: "46.96333",
     longitude: "-87.99833",
     title: "Huron Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/huron-island.jpg"
   },
   {
     latitude: "45.67639",
@@ -606,6 +671,7 @@ Lighthouse.create!([
     longitude: "-88.7612",
     title: "Isle Royale Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/isle-royale.jpg"
   },
   {
     latitude: "46.96879",
@@ -618,6 +684,8 @@ Lighthouse.create!([
     longitude: "-88.63029",
     title: "Keweenaw Waterway Upper Entrance Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/keweenaw-waterway-upper-entry.jpg"
+
   },
   {
     latitude: "42.50854",
@@ -648,24 +716,32 @@ Lighthouse.create!([
     longitude: "-86.46937",
     title: "Ludington Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/ludington-north-breakwater.jpg"
+
   },
   {
     latitude: "44.2517",
     longitude: "-86.3464",
     title: "Manistee Pierhead lights",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/manistee.jpg"
+
   },
   {
     latitude: "45.94478",
     longitude: "-86.24765",
     title: "Manistique East Breakwater Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/manistique-east-breakwater.jpg"
+
   },
   {
     latitude: "47.41972",
     longitude: "-87.58722",
     title: "Manitou Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/manitou-island.jpg"
+
   },
   {
     latitude: "44.80793",
@@ -690,6 +766,7 @@ Lighthouse.create!([
     longitude: "-87.37604",
     title: "Marquette Harbor Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/marquette-harbor.jpg"
   },
   {
     latitude: "45.91333",
@@ -708,6 +785,7 @@ Lighthouse.create!([
     longitude: "-87.96667",
     title: "Mendota (Bete Grise) Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/mendota.jpg"
   },
   {
     latitude: "45.11392",
@@ -720,6 +798,7 @@ Lighthouse.create!([
     longitude: "-83.32111",
     title: "Middle Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/middle-island.jpg"
   },
   {
     latitude: "42.46375",
@@ -738,6 +817,7 @@ Lighthouse.create!([
     longitude: "-85.47947",
     title: "Mission Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/mission-point.jpg"
   },
   {
     latitude: "45.01823",
@@ -750,12 +830,15 @@ Lighthouse.create!([
     longitude: "-86.66115",
     title: "Munising Front Range Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/munising-front-range.jpg"
+
   },
   {
     latitude: "46.41254",
     longitude: "-86.66396",
     title: "Munising Rear Range Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/munising-rear-range.jpg"
   },
   {
     latitude: "45.19075",
@@ -786,24 +869,32 @@ Lighthouse.create!([
     longitude: "-85.95713",
     title: "North Manitou Shoal Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/north-manitou-shoal.jpg"
+
   },
   {
     latitude: "45.7875",
     longitude: "-84.72944",
     title: "Old Mackinac Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/old-mackinac-point.jpg"
+
   },
   {
     latitude: "46.87947",
     longitude: "-89.33084",
     title: "Ontonagon Harbor West Breakwater Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/ontonagon-harbor-west-pierhead.jpg"
+
   },
   {
     latitude: "46.87361",
     longitude: "-89.31861",
     title: "Ontonagon Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/ontonagon.jpg"
+
   },
   {
     latitude: "48.2237",
@@ -816,6 +907,8 @@ Lighthouse.create!([
     longitude: "-82.9172",
     title: "Peche Island Rear Range Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/peche-island-rear-range.jpg"
+
   },
   {
     latitude: "45.6682",
@@ -834,24 +927,29 @@ Lighthouse.create!([
     longitude: "-83.8993",
     title: "Pipe Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/pipe-island.jpg"
+
   },
   {
     latitude: "45.695",
     longitude: "-84.36167",
     title: "Poe Reef Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/poe-reef.jpg"
   },
   {
     latitude: "44.6913",
     longitude: "-86.2552",
     title: "Point Betsie Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/point-betsie.jpg"
   },
   {
     latitude: "46.48368",
     longitude: "-84.62568",
     title: "Point Iroquois Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/point-iroquois.jpg"
   },
   {
     latitude: "44.02333",
@@ -864,54 +962,71 @@ Lighthouse.create!([
     longitude: "-82.98333",
     title: "Port Austin Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/port-austin-reef.jpg"
   },
   {
     latitude: "43.42901",
     longitude: "-82.5402",
     title: "Port Sanilac Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/port-sanilac.jpg"
+
   },
   {
     latitude: "46.97803",
     longitude: "-88.41399",
     title: "Portage River (Jacobsville) Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/portage-lake-lower-entry.jpg"
+
   },
   {
     latitude: "45.52722",
     longitude: "-86.66361",
     title: "Poverty Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/poverty-island.jpg"
+
   },
   {
     latitude: "46.574144",
     longitude: "-87.374577",
     title: "Presque Isle Harbor Breakwater Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/presque-isle-harbor-breakwater.jpg"
+
   },
   {
     latitude: "45.28722",
     longitude: "-83.47389",
     title: "New Presque Isle Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/presque-isle-new.jpg"
+
   },
   {
     latitude: "45.34203",
     longitude: "-83.47828",
     title: "Old Presque Isle Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/presque-isle-old.jpg"
+
   },
   {
     latitude: "48.08917",
     longitude: "-88.57917",
     title: "Rock Harbor Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/rock-harbor.jpg"
+
   },
   {
     latitude: "47.86667",
     longitude: "-89.31333",
     title: "Rock of Ages Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/rock-of-ages.jpg"
+
   },
   {
     latitude: "47.19549",
@@ -930,12 +1045,16 @@ Lighthouse.create!([
     longitude: "-84.61658",
     title: "Round Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/round-island-.jpg"
+
   },
   {
     latitude: "46.10897",
     longitude: "-84.01993",
     title: "Round Island Light (St. Mary's River)",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/round-island-st-marys.jpg"
+
   },
   {
     latitude: "45.84333",
@@ -954,12 +1073,15 @@ Lighthouse.create!([
     longitude: "-88.37042",
     title: "Sand Hills Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/sand-hills.jpg"
+
   },
   {
     latitude: "45.74444",
     longitude: "-87.04444",
     title: "Sand Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/sand-point-escanaba.jpg"
   },
   {
     latitude: "46.78337",
@@ -978,6 +1100,8 @@ Lighthouse.create!([
     longitude: "-85.8371",
     title: "South Fox Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/south-fox-island.jpg"
+
   },
   {
     latitude: "42.40222",
@@ -990,30 +1114,40 @@ Lighthouse.create!([
     longitude: "-86.09378",
     title: "South Manitou Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/south-manitou-island.jpg"
+
   },
   {
     latitude: "45.77333",
     longitude: "-84.13667",
     title: "Spectacle Reef Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/spectacle-reef.jpg"
+
   },
   {
     latitude: "45.8399",
     longitude: "-85.58713",
     title: "Squaw Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/squaw-island.jpg"
+
   },
   {
     latitude: "42.5375",
     longitude: "-82.69472",
     title: "St. Clair Flats Front and Rear Range Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/st-clair-flats-south-channel-rear-range.jpg"
+
   },
   {
     latitude: "45.855",
     longitude: "-84.86333",
     title: "St. Helena Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/st-helena-island.jpg"
+
   },
   {
     latitude: "42.1161",
@@ -1032,24 +1166,32 @@ Lighthouse.create!([
     longitude: "-86.7575",
     title: "St. Martin Island Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/st-martin-island.jpg"
+
   },
   {
     latitude: "47.18351",
     longitude: "-87.22512",
     title: "Stannard Rock Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/stannard-rock.jpg"
+
   },
   {
     latitude: "44.71269",
     longitude: "-83.27272",
     title: "Sturgeon Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/sturgeon-point.jpg"
+
   },
   {
     latitude: "44.254",
     longitude: "-83.449",
     title: "Tawas Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/tawas-point.jpg"
+
   },
   {
     latitude: "45.04167",
@@ -1080,6 +1222,8 @@ Lighthouse.create!([
     longitude: "-85.09111",
     title: "Waugoshance Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/waugoshance.jpg"
+
   },
   {
     latitude: "43.37473",
@@ -1092,12 +1236,16 @@ Lighthouse.create!([
     longitude: "-85.13528",
     title: "White Shoal Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/white-shoal.jpg"
+
   },
   {
     latitude: "46.77056",
     longitude: "-84.95667",
     title: "Whitefish Point Light",
     description: "",
+    instagram: "http://static.jenharley.com/lighthouses/whitefish-point.jpg"
+
   },
   {
     latitude: "42.34702",
