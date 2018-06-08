@@ -34,7 +34,8 @@ Rails.application.configure do
   }
   config.action_mailer.default_url_options = { host: ENV.fetch("APPLICATION_HOST") }
   config.action_mailer.asset_host = ENV.fetch("ASSET_HOST", ENV.fetch("APPLICATION_HOST"))
-  config.force_ssl = true
+  config.force_ssl = false
+  config.active_storage.service = :amazon
 end
 Rails.application.config.middleware.insert_before Rack::Runtime, Rack::Timeout, service_timeout: 5
 
