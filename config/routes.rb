@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   root to: "posters#home"
   get "contact" => "contact#new", :as => "contact"
   post "contact" => "contact#create"
+  get '/.well-known/acme-challenge/:id' => 'pages#letsencrypt'
 
   scope "api", defaults: {format: :json} do
     resources :posters
