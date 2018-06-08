@@ -27,6 +27,7 @@ gem "sprockets", ">= 3.0.0"
 gem "title"
 gem "uglifier"
 gem "bootsnap", require: false
+gem "aws-sdk-s3", require: false
 
 
 group :development do
