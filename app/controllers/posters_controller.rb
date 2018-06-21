@@ -15,7 +15,7 @@ class PostersController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render json: @lighthouses }
+      format.json { render json: @posters }
     end
   end
 
@@ -25,7 +25,7 @@ class PostersController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render json: @lighthouse }
+      format.json { render json: @poster }
     end
   end
 

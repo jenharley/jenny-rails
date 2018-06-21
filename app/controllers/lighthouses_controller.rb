@@ -1,13 +1,16 @@
 class LighthousesController < ApplicationController
   before_action :set_lighthouse, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index]
 
   # GET /lighthouses
   def index
     @lighthouses = Lighthouse.all
+    @lighthouse_image_host = lighthouse_image_host
     @geojson = Array.new
 
     @lighthouses.each do |lighthouse|
+      lighthouse_image_path = URI.parse(lighthouse.instagram.to_s).path
+
       @geojson << {
         type: 'Feature',
         geometry: {
@@ -16,7 +19,7 @@ class LighthousesController < ApplicationController
         },
         properties: {
           name: lighthouse.title,
-          instagram: lighthouse.instagram,
+          instagram: "#{lighthouse_image_host}" + lighthouse_image_path.to_s
         }
       }
     end
@@ -79,5 +82,9 @@ class LighthousesController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     def lighthouse_params
       params.require(:lighthouse).permit(:title, :location)
+    end
+
+    def lighthouse_image_host
+      "https://jenny.smharley.com"
     end
 end

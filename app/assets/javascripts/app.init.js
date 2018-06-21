@@ -21,7 +21,7 @@ Lighthouses.init = {
               var marker = L.marker(new L.LatLng(a["geometry"]["coordinates"][1], a["geometry"]["coordinates"][0]), { title: title });
               var popupContent = "<p>" + title + "</p>";
 
-              if (a["properties"]["instagram"] !== null) {
+              if (a["properties"]["instagram"] !== "https://jenny.smharley.com") {
                 popupContent = "<img src='" + a["properties"]["instagram"] + "'/>" + popupContent;
               }
 
