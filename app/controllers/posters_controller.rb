@@ -67,11 +67,11 @@ class PostersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def poster_host_url
-      "https://static.jenharley.com/posters/large/"
+      "https://jenny.smharley.com/posters/large/"
     end
 
     def poster_thumb_host_url
-      "https://static.jenharley.com/posters/thumbs/"
+      "https://jenny.smharley.com/posters/thumbs/"
     end
 
     def set_poster
