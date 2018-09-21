@@ -10,7 +10,7 @@ class PostersController < ApplicationController
 
   # GET /posters
   def index
-    @posters = Poster.all
+    @posters = Poster.all.order(:poster_date).reverse
     @poster_thumb_host_url = poster_thumb_host_url
 
     respond_to do |format|
