@@ -1,9 +1,16 @@
-require "bundler/setup"
-require "bundler/gem_tasks"
-require "rspec/core/rake_task"
 require "standard/rake"
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-RSpec::Core::RakeTask.new(:rspec)
+require_relative 'config/application'
 
-desc "Run the test suite"
-task default: [:rspec, :standard]
+Rails.application.load_tasks
+task(:default).clear
+task default: [:spec]
+
+if defined? RSpec
+  task(:spec).clear
+  RSpec::Core::RakeTask.new(:spec) do |t|
+    t.verbose = false
+  end
+end
