@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.5.1"
+ruby "2.6.6"
 
 gem "administrate"
 gem "autoprefixer-rails"
@@ -52,8 +52,6 @@ group :test do
   gem "timecop"
   gem "webmock"
 end
-
-gem "suspenders", group: [:development, :test]
 
 gem 'high_voltage'
 gem 'bourbon', '~> 5.0'
